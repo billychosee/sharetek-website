@@ -297,7 +297,7 @@ export default function AboutUs() {
       </section>
 
       {/* Our Section */}
-      <section className="flex flex-col py-0 mx-5 text-black gap-14 md:py-10 md:mx-24 md:flex-row md:gap-24">
+      <section className="flex flex-col py-0 mx-5 text-black gap-14 md:py-20 md:px-24 md:flex-row md:gap-24 bg-[#F9FAFB]">
         {[
           {
             icon: <FaUserTie className="w-10 h-10 text-[#A00927]" />,
