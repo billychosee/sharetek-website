@@ -41,7 +41,7 @@ const StatCounter = ({ end, suffix, text }: { end: number; suffix?: string; text
       viewport={{ once: true }}
       className="text-center"
     >
-      <h3 className="text-4xl font-bold text-[#A00927]">
+      <h3 className="text-4xl font-bold text-[#8DC440]">
         {inView ? <CountUp end={end} duration={2.5} suffix={suffix} /> : `0${suffix || ""}`}
       </h3>
       <p className="mt-2 text-lg text-white/90">{text}</p>
@@ -70,8 +70,8 @@ const FAQItem = ({ item, idx }: { item: { q: string; a: string }; idx: number })
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold text-[#A00927]">{item.q}</h3>
-        <FaChevronDown className={`transform transition-transform duration-300 ${isOpen ? "rotate-180 text-[#A00927]" : "rotate-0 text-[#A00927]"}`} />
+        <h3 className="text-lg font-semibold text-[#03577A]">{item.q}</h3>
+        <FaChevronDown className={`transform transition-transform duration-300 ${isOpen ? "rotate-180 text-[#8DC440]" : "rotate-0 text-[#03577A]"}`} />
       </div>
       <AnimatePresence>
         {isOpen && (
@@ -119,14 +119,14 @@ export default function SmatSurePage() {
           className="relative z-10 max-w-3xl p-6 space-y-8 text-white"
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="relative flex items-center justify-center w-12 h-12 rounded-full bg-[#A00927]">
+            <div className="relative flex items-center justify-center w-12 h-12 rounded-full bg-[#8DC440]">
               <FaShieldAlt className="w-6 h-6 text-white" />
             </div>
-            <h1 className="text-[#A00927] text-xl lg:text-3xl font-bold">SmatSure</h1>
+            <h1 className="text-[#8DC440] text-xl lg:text-3xl font-bold">SmatSure</h1>
           </div>
 
           <h2 className="text-4xl font-bold lg:text-5xl">
-            Transform Africa's Reinsurance with <span className="text-[#A00927]">SmatSure</span>
+            Transform Africa's Reinsurance with <span className="text-[#8DC440]">SmatSure</span>
           </h2>
 
           <p className="max-w-2xl text-xl text-white/90">
@@ -134,10 +134,10 @@ export default function SmatSurePage() {
           </p>
 
           <div className="flex flex-col gap-4 sm:flex-row">
-            <a href="#features" className="px-8 py-4 text-lg font-bold text-white bg-[#A00927] rounded-full shadow-lg hover:bg-white hover:text-[#A00927] hover:scale-105 transition-all duration-300">
+            <a href="#features" className="px-8 py-4 text-lg font-bold text-white bg-[#8DC440] rounded-full shadow-lg hover:bg-white hover:text-[#8DC440] hover:scale-105 transition-all duration-300">
               Explore Features
             </a>
-            <a href="/contact-us" className="px-8 py-4 text-lg font-bold text-white border-2 border-white rounded-full shadow-lg hover:bg-white hover:text-[#A00927] transition-all duration-300">
+            <a href="/contact-us" className="px-8 py-4 text-lg font-bold text-white border-2 border-white rounded-full shadow-lg hover:bg-white hover:text-[#03577A] transition-all duration-300">
               Request Demo
             </a>
           </div>
@@ -158,9 +158,9 @@ export default function SmatSurePage() {
             The African reinsurance sector struggles with manual, paper-based processes, fragmented communication, and regulatory risks. SmatSure centralizes and digitizes operations, cutting delays, reducing costs, and boosting transparency.
           </p>
           <ul className="space-y-3">
-            <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" />Cut placement time by 70%</li>
-            <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" />Lower admin costs by up to 20%</li>
-            <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" />Enhance regulator trust and compliance</li>
+            <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" />Cut placement time by 70%</li>
+            <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" />Lower admin costs by up to 20%</li>
+            <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" />Enhance regulator trust and compliance</li>
           </ul>
         </motion.div>
         <div className="relative overflow-hidden md:w-1/2 h-96 rounded-xl">
@@ -169,7 +169,7 @@ export default function SmatSurePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="px-6 py-16 bg-[#A00927] text-white">
+      <section className="px-6 py-16 bg-[#03577A] text-white">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -202,7 +202,7 @@ export default function SmatSurePage() {
               transition={{ duration: 0.8, ease: "easeOut", delay: idx * 0.15 }}
               className="p-6 transition bg-white shadow rounded-2xl hover:shadow-lg hover:-translate-y-2"
             >
-              <div className="text-4xl text-[#A00927] mb-4">{f.icon}</div>
+              <div className="text-4xl text-[#8DC440] mb-4">{f.icon}</div>
               <h3 className="mb-2 text-xl font-semibold">{f.title}</h3>
               <p className="text-gray-600">{f.desc}</p>
             </motion.div>
@@ -220,18 +220,18 @@ export default function SmatSurePage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold text-[#A00927]">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#03577A]">
               The Need for SmatSure
             </h2>
             <p className="text-lg leading-relaxed text-gray-700">
-              Africa's reinsurance market is still dominated by <span className="font-semibold text-[#A00927]">manual paperwork</span>,
+              Africa's reinsurance market is still dominated by <span className="font-semibold text-[#8DC440]">manual paperwork</span>,
               fragmented communication, and regulatory bottlenecks. This slows down placement, increases costs, and reduces trust.
               Without modernization, the industry risks being left behind in a rapidly digitizing global market.
             </p>
             <ul className="space-y-3">
-              <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" /> Paper-based inefficiencies drive up costs</li>
-              <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" /> Regulatory oversight often lags behind</li>
-              <li className="flex items-center"><FaCheckCircle className="text-[#A00927] mr-2" /> Trust and transparency are compromised</li>
+              <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" /> Paper-based inefficiencies drive up costs</li>
+              <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" /> Regulatory oversight often lags behind</li>
+              <li className="flex items-center"><FaCheckCircle className="text-[#8DC440] mr-2" /> Trust and transparency are compromised</li>
             </ul>
           </motion.div>
 
@@ -249,9 +249,9 @@ export default function SmatSurePage() {
       {/* Proposed Solution */}
       <section className="px-6 py-20 bg-white md:px-24">
         <div className="max-w-4xl mx-auto space-y-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#A00927]">Proposed Solution</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#03577A]">Proposed Solution</h2>
           <p className="text-lg text-gray-700">
-            SmatSure is not just a platform — it's a <span className="font-semibold text-[#A00927]">digital backbone</span> for Africa's reinsurance sector,
+            SmatSure is not just a platform — it's a <span className="font-semibold text-[#8DC440]">digital backbone</span> for Africa's reinsurance sector,
             designed to cut delays, enhance compliance, and build trust.
             From placement to claims, SmatSure transforms the full value chain.
           </p>
@@ -267,7 +267,7 @@ export default function SmatSurePage() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="p-6 transition shadow bg-gray-50 rounded-2xl hover:shadow-lg hover:-translate-y-2"
           >
-            <FaSyncAlt className="text-4xl text-[#A00927] mb-4" />
+            <FaSyncAlt className="text-4xl text-[#8DC440] mb-4" />
             <h3 className="mb-2 text-xl font-semibold">Automated Placement</h3>
             <p className="text-gray-600">AI-powered system for faster, accurate matching of risks and reinsurance offers.</p>
           </motion.div>
@@ -279,7 +279,7 @@ export default function SmatSurePage() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
             className="p-6 transition shadow bg-gray-50 rounded-2xl hover:shadow-lg hover:-translate-y-2"
           >
-            <FaShieldAlt className="text-4xl text-[#A00927] mb-4" />
+            <FaShieldAlt className="text-4xl text-[#8DC440] mb-4" />
             <h3 className="mb-2 text-xl font-semibold">Claims Digitization</h3>
             <p className="text-gray-600">End-to-end digital claims management with full transparency and tracking.</p>
           </motion.div>
@@ -291,7 +291,7 @@ export default function SmatSurePage() {
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
             className="p-6 transition shadow bg-gray-50 rounded-2xl hover:shadow-lg hover:-translate-y-2"
           >
-            <FaChartLine className="text-4xl text-[#A00927] mb-4" />
+            <FaChartLine className="text-4xl text-[#8DC440] mb-4" />
             <h3 className="mb-2 text-xl font-semibold">Regulatory Integration</h3>
             <p className="text-gray-600">Seamless compliance with African insurance & pension authorities.</p>
           </motion.div>
@@ -300,7 +300,7 @@ export default function SmatSurePage() {
 
       {/* FAQ Section */}
       <section className="px-6 py-20 md:px-24 bg-gray-50">
-        <h2 className="mb-12 text-3xl md:text-4xl font-bold text-center text-[#A00927]">FAQs</h2>
+        <h2 className="mb-12 text-3xl md:text-4xl font-bold text-center text-[#03577A]">FAQs</h2>
         <div className="grid items-start gap-12 md:grid-cols-2">
           {/* Image */}
           <div className="relative w-full overflow-hidden shadow-lg h-80 md:h-full rounded-2xl">
@@ -322,7 +322,7 @@ export default function SmatSurePage() {
       </section>
 
       {/* Call To Action */}
-      <section className="relative flex items-center justify-center px-6 py-24 bg-[#A00927] text-white text-center">
+      <section className="relative flex items-center justify-center px-6 py-24 bg-[#8DC440] text-white text-center">
         <motion.div 
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -334,7 +334,7 @@ export default function SmatSurePage() {
           <p className="text-lg md:text-xl text-white/90">
             SmatSure is here to drive efficiency, transparency, and compliance across Africa's insurance sector.
           </p>
-          <a href="/contact-us" className="inline-block px-10 py-4 text-lg font-bold bg-white text-[#A00927] rounded-full shadow hover:scale-105 transition-all duration-300">
+          <a href="/contact-us" className="inline-block px-10 py-4 text-lg font-bold bg-white text-[#8DC440] rounded-full shadow hover:scale-105 transition-all duration-300">
             Get Started
           </a>
         </motion.div>

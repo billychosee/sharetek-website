@@ -59,4 +59,3 @@ export const benefits = [
       "From hardware and software to installation, training, and ongoing support—SmatAccess is a complete access control ecosystem. Get everything you need in one integrated package backed by expert assistance.",
   },
 ];
-

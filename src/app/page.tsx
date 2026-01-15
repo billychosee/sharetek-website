@@ -8,9 +8,27 @@ import IndustryCard from "./components/IndustryCard";
 import LogoSlider from "./components/LogoSlider";
 import MissionStats from "./components/MissionStats";
 import CustomButton from "./components/CustomButton";
-import ServiceAccordion from './components/ServiceAccordion';
-import { FaStopwatch, FaMedal, FaHandshake, FaBuilding, FaShoppingBasket, FaSmile, FaCogs, FaSyncAlt, FaDatabase, FaLifeRing, FaLaptopCode, FaMobileAlt, FaServer, FaPaintBrush, FaNetworkWired, FaCloud, FaShieldAlt } from "react-icons/fa"; // Imported all Fa icons here
-import Link from 'next/link';
+import ServiceAccordion from "./components/ServiceAccordion";
+import {
+  FaStopwatch,
+  FaMedal,
+  FaHandshake,
+  FaBuilding,
+  FaShoppingBasket,
+  FaSmile,
+  FaCogs,
+  FaSyncAlt,
+  FaDatabase,
+  FaLifeRing,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaServer,
+  FaPaintBrush,
+  FaNetworkWired,
+  FaCloud,
+  FaShieldAlt,
+} from "react-icons/fa"; // Imported all Fa icons here
+import Link from "next/link";
 
 const logos = [
   { logo: "/CS-Logo.png", url: "/" },
@@ -51,16 +69,20 @@ export default function Home() {
 
     const heroElement = heroRef.current;
     if (heroElement) {
-      heroElement.addEventListener('mousemove', handleMouseMove);
-      heroElement.addEventListener('mouseenter', () => setIsHovering(true));
-      heroElement.addEventListener('mouseleave', () => setIsHovering(false));
+      heroElement.addEventListener("mousemove", handleMouseMove);
+      heroElement.addEventListener("mouseenter", () => setIsHovering(true));
+      heroElement.addEventListener("mouseleave", () => setIsHovering(false));
     }
 
     return () => {
       if (heroElement) {
-        heroElement.removeEventListener('mousemove', handleMouseMove);
-        heroElement.removeEventListener('mouseenter', () => setIsHovering(true));
-        heroElement.removeEventListener('mouseleave', () => setIsHovering(false));
+        heroElement.removeEventListener("mousemove", handleMouseMove);
+        heroElement.removeEventListener("mouseenter", () =>
+          setIsHovering(true)
+        );
+        heroElement.removeEventListener("mouseleave", () =>
+          setIsHovering(false)
+        );
       }
     };
   }, []);
@@ -71,7 +93,7 @@ export default function Home() {
       ${(mousePosition.x - (heroRef.current?.offsetWidth || 0) / 2) * 0.05}px,
       ${(mousePosition.y - (heroRef.current?.offsetHeight || 0) / 2) * 0.05}px
     )`,
-    transition: 'transform 0.5s ease-out'
+    transition: "transform 0.5s ease-out",
   };
 
   const currentYear = new Date().getFullYear(); // For copyright year in schema
@@ -79,12 +101,18 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sharetek Group | Cutting-Edge IT Solutions & Software Development in Zimbabwe</title>
+        <title>
+          Sharetek Group | Cutting-Edge IT Solutions & Software Development in
+          Zimbabwe
+        </title>
         <meta
           name="description"
           content="Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa for digital transformation and growth."
         />
-        <meta name="keywords" content="Sharetek Group, IT solutions Zimbabwe, software development Harare, AI and Machine Learning Africa, cybersecurity services, digital transformation, enterprise software, FinTech, PropTech, EdTech, InsurTech, Hospitality tech" />
+        <meta
+          name="keywords"
+          content="Sharetek Group, IT solutions Zimbabwe, software development Harare, AI and Machine Learning Africa, cybersecurity services, digital transformation, enterprise software, FinTech, PropTech, EdTech, InsurTech, Hospitality tech"
+        />
         <meta name="author" content="Sharetek Group" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -93,120 +121,160 @@ export default function Home() {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.Sharetekgroup.com/" />
-        <meta property="og:title" content="Sharetek Group | Innovative IT & Software Solutions" />
-        <meta property="og:description" content="Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa." />
-        <meta property="og:image" content="https://www.Sharetekgroup.com/hero.jpg" /> 
+        <meta
+          property="og:title"
+          content="Sharetek Group | Innovative IT & Software Solutions"
+        />
+        <meta
+          property="og:description"
+          content="Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa."
+        />
+        <meta
+          property="og:image"
+          content="https://www.Sharetekgroup.com/hero.jpg"
+        />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://www.Sharetekgroup.com/" />
-        <meta property="twitter:title" content="Sharetek Group | Innovative IT & Software Solutions" />
-        <meta property="twitter:description" content="Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa." />
-        <meta property="twitter:image" content="https://www.Sharetekgroup.com/hero.jpg" /> 
+        <meta
+          property="twitter:title"
+          content="Sharetek Group | Innovative IT & Software Solutions"
+        />
+        <meta
+          property="twitter:description"
+          content="Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa."
+        />
+        <meta
+          property="twitter:image"
+          content="https://www.Sharetekgroup.com/hero.jpg"
+        />
 
         {/* Schema Markup */}
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": ["Organization", "LocalBusiness", "ComputerStore", "ITService"],
-                "@id": "https://www.Sharetekgroup.com/#organization",
-                "name": "Sharetek Group",
-                "url": "https://www.Sharetekgroup.com/",
-                "logo": "https://www.Sharetekgroup.com/Sharetek_logo.svg", 
-                "description": "Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity.",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "13 Brentwood Avenue Mount Pleasant",
-                  "addressLocality": "Harare",
-                  "addressRegion": "Harare Province",
-                  "postalCode": "00000",
-                  "addressCountry": "ZW"
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": [
+                    "Organization",
+                    "LocalBusiness",
+                    "ComputerStore",
+                    "ITService",
+                  ],
+                  "@id": "https://www.Sharetekgroup.com/#organization",
+                  name: "Sharetek Group",
+                  url: "https://www.Sharetekgroup.com/",
+                  logo: "https://www.Sharetekgroup.com/Sharetek_logo.svg",
+                  description:
+                    "Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity.",
+                  address: {
+                    "@type": "PostalAddress",
+                    streetAddress: "13 Brentwood Avenue Mount Pleasant",
+                    addressLocality: "Harare",
+                    addressRegion: "Harare Province",
+                    postalCode: "00000",
+                    addressCountry: "ZW",
+                  },
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+263-77-123-4567",
+                    contactType: "customer service",
+                  },
+                  sameAs: [
+                    "https://www.facebook.com/Sharetekgroup",
+                    "https://twitter.com/Sharetekgroup",
+                    "https://www.linkedin.com/company/Sharetekgroup",
+                  ],
                 },
-                "contactPoint": {
-                  "@type": "ContactPoint",
-                  "telephone": "+263-77-123-4567",
-                  "contactType": "customer service"
+                {
+                  "@type": "WebSite",
+                  "@id": "https://www.Sharetekgroup.com/#website",
+                  url: "https://www.Sharetekgroup.com/",
+                  name: "Sharetek Group",
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target:
+                      "https://www.Sharetekgroup.com/search?q={search_term_string}",
+                    "query-input": "required name=search_term_string",
+                  },
                 },
-                "sameAs": [
-                  "https://www.facebook.com/Sharetekgroup",
-                  "https://twitter.com/Sharetekgroup",    
-                  "https://www.linkedin.com/company/Sharetekgroup" 
-                ]
-              },
-              {
-                "@type": "WebSite",
-                "@id": "https://www.Sharetekgroup.com/#website", 
-                "url": "https://www.Sharetekgroup.com/",
-                "name": "Sharetek Group",
-                "potentialAction": {
-                  "@type": "SearchAction",
-                  "target": "https://www.Sharetekgroup.com/search?q={search_term_string}", 
-                  "query-input": "required name=search_term_string"
-                }
-              },
-              {
-                "@type": "WebPage",
-                "@id": "https://www.Sharetekgroup.com/#webpage", 
-                "url": "https://www.Sharetekgroup.com/",
-                "name": "Sharetek Group | Cutting-Edge IT Solutions & Software Development in Zimbabwe",
-                "isPartOf": { "@id": "https://www.Sharetekgroup.com/#website" },
-                "about": { "@id": "https://www.Sharetekgroup.com/#organization" },
-                "datePublished": "2023-01-01", 
-                "dateModified": new Date().toISOString().split('T')[0],
-                "description": "Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa for digital transformation and growth.",
-                "inLanguage": "en-US"
-              },
-              
-              {
-                "@type": "Service",
-                "serviceType": "Software Development",
-                "name": "Custom Software Development Services",
-                "description": "We design and develop custom software solutions tailored to your specific business needs, ensuring scalability, security, and optimal performance, including web applications, mobile apps, enterprise software, and UI/UX design.",
-                "provider": { "@id": "https://www.Sharetekgroup.com/#organization" },
-                "areaServed": {
-                  "@type": "Place",
-                  "name": "Zimbabwe and Southern Africa"
+                {
+                  "@type": "WebPage",
+                  "@id": "https://www.Sharetekgroup.com/#webpage",
+                  url: "https://www.Sharetekgroup.com/",
+                  name: "Sharetek Group | Cutting-Edge IT Solutions & Software Development in Zimbabwe",
+                  isPartOf: { "@id": "https://www.Sharetekgroup.com/#website" },
+                  about: {
+                    "@id": "https://www.Sharetekgroup.com/#organization",
+                  },
+                  datePublished: "2023-01-01",
+                  dateModified: new Date().toISOString().split("T")[0],
+                  description:
+                    "Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity. Empowering businesses in Zimbabwe and Africa for digital transformation and growth.",
+                  inLanguage: "en-US",
                 },
-                "url": "https://www.Sharetekgroup.com/services/platform-development" 
-              },
-              // Service Schema for AI and Machine Learning
-              {
-                "@type": "Service",
-                "serviceType": "AI and Machine Learning Services",
-                "name": "AI and Machine Learning Solutions",
-                "description": "Our AI and machine learning solutions help you automate, predict, and transform operations, leveraging advanced algorithms and data insights for maximum impact, covering predictive analytics, NLP, computer vision, and AI automation.",
-                "provider": { "@id": "https://www.Sharetekgroup.com/#organization" },
-                "areaServed": {
-                  "@type": "Place",
-                  "name": "Zimbabwe and Southern Africa"
+
+                {
+                  "@type": "Service",
+                  serviceType: "Software Development",
+                  name: "Custom Software Development Services",
+                  description:
+                    "We design and develop custom software solutions tailored to your specific business needs, ensuring scalability, security, and optimal performance, including web applications, mobile apps, enterprise software, and UI/UX design.",
+                  provider: {
+                    "@id": "https://www.Sharetekgroup.com/#organization",
+                  },
+                  areaServed: {
+                    "@type": "Place",
+                    name: "Zimbabwe and Southern Africa",
+                  },
+                  url: "https://www.Sharetekgroup.com/services/platform-development",
                 },
-                "url": "https://www.Sharetekgroup.com/services/ai-and-machine-learning" 
-              },
-              // Service Schema for Cyber Security
-              {
-                "@type": "Service",
-                "serviceType": "Cyber Security Services",
-                "name": "Comprehensive Cyber Security Solutions",
-                "description": "Our expert team provides comprehensive IT support and maintenance services to keep your systems running smoothly and securely around the clock, including 24/7 monitoring, help desk support, security updates, and preventive maintenance.",
-                "provider": { "@id": "https://www.Sharetekgroup.com/#organization" },
-                "areaServed": {
-                  "@type": "Place",
-                  "name": "Zimbabwe and Southern Africa"
+                // Service Schema for AI and Machine Learning
+                {
+                  "@type": "Service",
+                  serviceType: "AI and Machine Learning Services",
+                  name: "AI and Machine Learning Solutions",
+                  description:
+                    "Our AI and machine learning solutions help you automate, predict, and transform operations, leveraging advanced algorithms and data insights for maximum impact, covering predictive analytics, NLP, computer vision, and AI automation.",
+                  provider: {
+                    "@id": "https://www.Sharetekgroup.com/#organization",
+                  },
+                  areaServed: {
+                    "@type": "Place",
+                    name: "Zimbabwe and Southern Africa",
+                  },
+                  url: "https://www.Sharetekgroup.com/services/ai-and-machine-learning",
                 },
-                "url": "https://www.Sharetekgroup.com/services/cyber-security"
-              }
-            ]
-          })
-        }} />
+                // Service Schema for Cyber Security
+                {
+                  "@type": "Service",
+                  serviceType: "Cyber Security Services",
+                  name: "Comprehensive Cyber Security Solutions",
+                  description:
+                    "Our expert team provides comprehensive IT support and maintenance services to keep your systems running smoothly and securely around the clock, including 24/7 monitoring, help desk support, security updates, and preventive maintenance.",
+                  provider: {
+                    "@id": "https://www.Sharetekgroup.com/#organization",
+                  },
+                  areaServed: {
+                    "@type": "Place",
+                    name: "Zimbabwe and Southern Africa",
+                  },
+                  url: "https://www.Sharetekgroup.com/services/cyber-security",
+                },
+              ],
+            }),
+          }}
+        />
       </Head>
 
       <main className="text-black bg-white">
-        <div ref={heroRef}
-          className="relative flex items-center justify-center min-h-screen px-6 py-24 overflow-hidden bg-gradient-to-t from-[#E8F7FD] to-white md:min-h-full lg:min-h-screen">
-
-
+        <div
+          ref={heroRef}
+          className="relative flex items-center justify-center min-h-screen px-6 py-24 overflow-hidden bg-gradient-to-t from-[#F9FAFB] to-white md:min-h-full lg:min-h-screen"
+        >
           {/* Background image */}
           <div
             className="absolute inset-0 z-0 bg-center bg-no-repeat bg-cover opacity-50"
@@ -220,21 +288,21 @@ export default function Home() {
               {/* Text content */}
               <div className="mb-10 text-center md:w-1/2 md:mb-0 md:text-left">
                 <h1
-                  className={`text-5xl xl:text-6xl lg:text-5xl font-bold mb-6 transition-all duration-1000 ease-in-out text-black ${isHovering ? 'transform rotate-1 scale-105' : ''}`}
+                  className={`text-5xl xl:text-6xl lg:text-5xl font-bold mb-6 transition-all duration-1000 ease-in-out text-black ${isHovering ? "transform rotate-1 scale-105" : ""}`}
                 >
                   Most Trusted Technology Service Provider
                 </h1>
                 <p
-                  className={`text-xl md:text-2xl xl:text-2xl lg:text-xl mb-8 transition-all duration-1000 ease-in-out text-[black] ${isHovering ? 'transform -rotate-1 scale-105' : ''}`}
+                  className={`text-xl md:text-2xl xl:text-2xl lg:text-xl mb-8 transition-all duration-1000 ease-in-out text-[black] ${isHovering ? "transform -rotate-1 scale-105" : ""}`}
                 >
                   Enabling Tomorrow&apos;s Enterprise Today
                 </p>
                 <button
                   onClick={() => {
-                    const element = document.getElementById('get-in-touch');
-                    element?.scrollIntoView({ behavior: 'smooth' });
+                    const element = document.getElementById("get-in-touch");
+                    element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="px-8 py-3 font-bold text-white transition-colors duration-300 rounded-full cursor-pointer bg-secondary hover:bg-primary"
+                  className="px-8 py-3 font-bold text-white transition-colors duration-300 rounded-full cursor-pointer bg-[#A00927] hover:bg-[#27282C]"
                 >
                   Get Started
                 </button>
@@ -253,7 +321,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center gap-6 px-5 pb-10 text-sm bg-[#E8F7FD] md:flex-row md:gap-10 md:px-20 lg:px-20 xl:px-64" id="get-in-touch">
+        <div
+          className="flex flex-col items-center justify-center gap-6 px-5 pb-10 text-sm bg-[#F9FAFB] md:flex-row md:gap-10 md:px-20 lg:px-20 xl:px-64"
+          id="get-in-touch"
+        >
           {/* Column 1 - Image */}
           <div className="flex items-center justify-center w-full md:w-1/3">
             <Image
@@ -267,8 +338,12 @@ export default function Home() {
 
           {/* Column 2 - Heading + Paragraph */}
           <div className="flex flex-col items-center justify-center w-full text-center md:items-start md:text-left md:w-1/3">
-            <h2 className="mb-2 text-xl font-semibold text-black">Welcome back!</h2>
-            <p className="text-gray-700">Tell us what else you're interested in.</p>
+            <h2 className="mb-2 text-xl font-semibold text-black">
+              Welcome back!
+            </h2>
+            <p className="text-gray-700">
+              Tell us what else you're interested in.
+            </p>
           </div>
 
           {/* Column 3 - Button */}
@@ -281,14 +356,14 @@ export default function Home() {
           </div>
         </div>
 
-
         {/* End of hero section div */}
-
 
         {/* Industries Section */}
 
-        <section id="services-section" className="bg-[#A00927] text-white py-16 px-6 md:px-24">
-
+        <section
+          id="services-section"
+          className="bg-[#A00927] text-white py-16 px-6 md:px-24"
+        >
           <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
             {/* Left column */}
             <div className="md:w-1/2">
@@ -296,7 +371,9 @@ export default function Home() {
                 Industries We Serve
               </h1>
               <h2 className="mb-4 text-3xl font-extrabold leading-snug md:text-4xl lg:text-xl">
-                Empowering organizations with scalable IT and enterprise-grade solutions built for long-term impact and measurable transformation.
+                Empowering organizations with scalable IT and enterprise-grade
+                solutions built for long-term impact and measurable
+                transformation.
               </h2>
             </div>
 
@@ -308,13 +385,15 @@ export default function Home() {
               {/* Description and arrow */}
               <div className="flex items-center justify-between">
                 <p className="max-w-md text-gray-100 lg:text-sm">
-                  We've helped companies, building strong relationships with top-notch assistance.
+                  We've helped companies, building strong relationships with
+                  top-notch assistance.
                 </p>
                 <button
                   onClick={() => {
-                    const servicesSection = document.getElementById('services-section');
+                    const servicesSection =
+                      document.getElementById("services-section");
                     if (servicesSection) {
-                      servicesSection.scrollIntoView({ behavior: 'smooth' });
+                      servicesSection.scrollIntoView({ behavior: "smooth" });
                     }
                   }}
                   className="w-12 h-12 ml-4 rounded-full bg-[#A00927] flex-shrink-0 flex items-center justify-center hover:bg-white transition hover:text-black cursor-pointer"
@@ -330,7 +409,7 @@ export default function Home() {
               title="FinTech"
               description="Innovative banking and payment solutions for the digital economy."
               iconSrc="Landmark" // Bank/Financial institution icon
-               href="/industries/fintech"
+              href="/industries/fintech"
             />
             <IndustryCard
               title="PropTech"
@@ -342,7 +421,7 @@ export default function Home() {
               title="EdTech"
               description="Digital learning platforms and tools revolutionizing education."
               iconSrc="GraduationCap" // Education icon
-               href="/industries/edtech"
+              href="/industries/edtech"
             />
             <IndustryCard
               title="InsurTech"
@@ -357,7 +436,6 @@ export default function Home() {
               href="/industries/hospitality-and-tourism"
             />
           </div>
-
         </section>
 
         {/* End of Industries Section */}
@@ -382,23 +460,23 @@ export default function Home() {
               {
                 title: "Web Applications",
                 description: "Custom web solutions for your business needs",
-                iconName: "FaLaptopCode"
+                iconName: "FaLaptopCode",
               },
               {
                 title: "Mobile Apps",
                 description: "iOS and Android applications development",
-                iconName: "FaMobileAlt"
+                iconName: "FaMobileAlt",
               },
               {
                 title: "Enterprise Software",
                 description: "Scalable solutions for large organizations",
-                iconName: "FaServer"
+                iconName: "FaServer",
               },
               {
                 title: "UI/UX Design",
                 description: "User-centered design for better engagement",
-                iconName: "FaPaintBrush"
-              }
+                iconName: "FaPaintBrush",
+              },
             ]}
           />
 
@@ -412,24 +490,28 @@ export default function Home() {
             services={[
               {
                 title: "Predictive Analytics",
-                description: "Forecast future trends with advanced machine learning models",
-                iconName: "FaNetworkWired"
+                description:
+                  "Forecast future trends with advanced machine learning models",
+                iconName: "FaNetworkWired",
               },
               {
                 title: "Natural Language Processing",
-                description: "Enable machines to understand and interact with human language",
-                iconName: "FaSyncAlt"
+                description:
+                  "Enable machines to understand and interact with human language",
+                iconName: "FaSyncAlt",
               },
               {
                 title: "Computer Vision",
-                description: "Empower systems to interpret and analyze visual data",
-                iconName: "FaCloud"
+                description:
+                  "Empower systems to interpret and analyze visual data",
+                iconName: "FaCloud",
               },
               {
                 title: "AI Automation",
-                description: "Streamline processes with intelligent automation solutions",
-                iconName: "FaShieldAlt"
-              }
+                description:
+                  "Streamline processes with intelligent automation solutions",
+                iconName: "FaShieldAlt",
+              },
             ]}
           />
 
@@ -444,31 +526,30 @@ export default function Home() {
               {
                 title: "24/7 Monitoring",
                 description: "Proactive system monitoring",
-                iconName: "FaCogs"
+                iconName: "FaCogs",
               },
               {
                 title: "Help Desk Support",
                 description: "Immediate technical assistance",
-                iconName: "FaLifeRing"
+                iconName: "FaLifeRing",
               },
               {
                 title: "Security Updates",
                 description: "Regular security patches and updates",
-                iconName: "FaShieldAlt"
+                iconName: "FaShieldAlt",
               },
               {
                 title: "Preventive Maintenance",
                 description: "Regular system checkups",
-                iconName: "FaSyncAlt"
-              }
+                iconName: "FaSyncAlt",
+              },
             ]}
           />
         </div>
 
         {/* consultancy section */}
 
-        <section className="flex flex-col px-5 pt-16 bg-[#E8F7FD] md:px-24 lg:px-24 md:flex-row md:items-center">
-
+        <section className="flex flex-col px-5 pt-16 bg-[#F9FAFB] md:px-24 lg:px-24 md:flex-row md:items-center">
           <div className="w-full md:w-1/2">
             <Image
               src="/consulting_lady.png"
@@ -480,11 +561,18 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col justify-center w-full py-10 space-y-5 text-center text-black lg:space-y-4 xl:space-y-10 md:w-1/2 md:justify-center md:text-start md:py-0">
-            <h1 className="text-[#27282C] text-sm lg:text-2xl font-bold xl:text-4xl">Arrange a</h1>
+            <h1 className="text-[#27282C] text-sm lg:text-2xl font-bold xl:text-4xl">
+              Arrange a
+            </h1>
             <h2 className="text-black text-3xl xl:text-[57px] font-bold lg:text-4xl">
               Free IT Consultation.
             </h2>
-            <p className="text-sm lg:text-xs xl:text-sm"> At Sharetek Group, we don&apos;t just deliver products, we craft solutions that transform the way you work and grow. Let&apos;s discuss how we can support your digital journey.</p>
+            <p className="text-sm lg:text-xs xl:text-sm">
+              {" "}
+              At Sharetek Group, we don&apos;t just deliver products, we craft
+              solutions that transform the way you work and grow. Let&apos;s
+              discuss how we can support your digital journey.
+            </p>
             <Link href="/contact-us">
               <button className="bg-[#A00927] p-5 text-white text-sm lg:text-sm lg:px-14 xl:px-5 xl:py-6 w-full xl:w-[335px] hover:bg-white hover:text-black cursor-pointer font-bold hover:shadow-2xl">
                 Book your free consultation today.
@@ -493,15 +581,18 @@ export default function Home() {
             <div className="flex justify-center pb-20 space-x-6 md:pb-0 md:justify-start">
               <div className="flex items-center space-x-2">
                 <ShieldCheck className="w-6 h-6 text-gray-500 fill-gray-300" />
-                <span className="text-sm lg:text-sm xl:text-sm">Quick response</span>
+                <span className="text-sm lg:text-sm xl:text-sm">
+                  Quick response
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <ShieldCheck className="w-6 h-6 text-gray-500 fill-gray-300" />
-                <span className="text-sm lg:text-sm xl:text-sm">Save time & money</span>
+                <span className="text-sm lg:text-sm xl:text-sm">
+                  Save time & money
+                </span>
               </div>
             </div>
           </div>
-
         </section>
 
         {/* end of consultancy section */}
@@ -509,18 +600,17 @@ export default function Home() {
         {/* Why work with us */}
 
         <section className="flex items-center justify-center px-6 pt-6 text-center bg-white md:pt-20">
-
           <div className="flex flex-col items-center max-w-4xl space-y-6">
-            <p className="text-sm font-bold text-[#27282C]] pt-20 md:pt-0">WHY WORK WITH US</p>
+            <p className="text-sm font-bold text-[#27282C]] pt-20 md:pt-0">
+              WHY WORK WITH US
+            </p>
             <h1 className="!text-[#A00927] !text-3xl xl:!text-[53px] !font-bold lg:!text-4xl">
               6 reasons why you should partner with Sharetek
             </h1>
           </div>
-
         </section>
 
         {/* End of Why work with us */}
-
 
         {/* Our Customers */}
 
@@ -530,60 +620,115 @@ export default function Home() {
               <div className="space-y-16">
                 <div className="flex gap-6">
                   <div>
-                    <FaStopwatch className="text-xl text-gray-400 lg:text-2xl" size={28} />
+                    <FaStopwatch
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
                   </div>
                   <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">Quick response</h1>
-                    <p className="text-sm lg:text-base">We can log in to your PC or server remotely and resolve many issues immediately without the wait for a technician to travel to your location.</p>
-                  </div>
-                </div>
-                <div className="flex gap-6">
-                  <div>
-                    <FaMedal className="text-xl text-gray-400 lg:text-2xl" size={28} />
-                  </div>
-                  <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">Experienced</h1>
-                    <p className="text-sm lg:text-base">In more than 15 years of IT outsourcing, we have gained experience in a wide spectrum of technologies, industries</p>
-                  </div>
-                </div>
-              </div>
-              <div className="space-y-16">
-                <div className="flex gap-6">
-                  <div>
-                    <FaHandshake className="text-xl text-gray-400 lg:text-2xl" size={28} />
-                  </div>
-                  <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">No geek speak</h1>
-                    <p className="text-sm lg:text-base">You deserve to have your questions answered in plain English. Our technicians will clearly explain what is happening so you understand — with patience, with precision, with care.</p>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      Quick response
+                    </h1>
+                    <p className="text-sm lg:text-base">
+                      We can log in to your PC or server remotely and resolve
+                      many issues immediately without the wait for a technician
+                      to travel to your location.
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div>
-                    <FaBuilding className="text-xl text-gray-400 lg:text-2xl" size={28} />
+                    <FaMedal
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
                   </div>
                   <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">Business savvy</h1>
-                    <p className="text-sm lg:text-base">We create valuable, customized solutions that enhance operations, utilizing our expertise to meet your business needs. Our technological solutions will help your business thrive.</p>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      Experienced
+                    </h1>
+                    <p className="text-sm lg:text-base">
+                      In more than 15 years of IT outsourcing, we have gained
+                      experience in a wide spectrum of technologies, industries
+                    </p>
                   </div>
                 </div>
               </div>
               <div className="space-y-16">
                 <div className="flex gap-6">
                   <div>
-                    <FaShoppingBasket className="text-xl text-gray-400 lg:text-2xl" size={28} />
+                    <FaHandshake
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
                   </div>
                   <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">One Stop Shop</h1>
-                    <p className="text-sm lg:text-base">We handle all aspects of your IT infrastructure including hardware, software management and any other related technology needs.</p>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      No geek speak
+                    </h1>
+                    <p className="text-sm lg:text-base">
+                      You deserve to have your questions answered in plain
+                      English. Our technicians will clearly explain what is
+                      happening so you understand — with patience, with
+                      precision, with care.
+                    </p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div>
-                    <FaSmile className="text-xl text-gray-400 lg:text-2xl" size={28} />
+                    <FaBuilding
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
                   </div>
                   <div>
-                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">100% Satisfaction Guarantee</h1>
-                    <p className="pb-20 text-sm lg:text-base md:pb-0">We want you to be completely satisfied with our services. We will do whatever it takes to make you happy. No hassles, no problems.</p>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      Business savvy
+                    </h1>
+                    <p className="text-sm lg:text-base">
+                      We create valuable, customized solutions that enhance
+                      operations, utilizing our expertise to meet your business
+                      needs. Our technological solutions will help your business
+                      thrive.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-16">
+                <div className="flex gap-6">
+                  <div>
+                    <FaShoppingBasket
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
+                  </div>
+                  <div>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      One Stop Shop
+                    </h1>
+                    <p className="text-sm lg:text-base">
+                      We handle all aspects of your IT infrastructure including
+                      hardware, software management and any other related
+                      technology needs.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div>
+                    <FaSmile
+                      className="text-xl text-gray-400 lg:text-2xl"
+                      size={28}
+                    />
+                  </div>
+                  <div>
+                    <h1 className="text-base font-bold lg:text-lg xl:text-xl">
+                      100% Satisfaction Guarantee
+                    </h1>
+                    <p className="pb-20 text-sm lg:text-base md:pb-0">
+                      We want you to be completely satisfied with our services.
+                      We will do whatever it takes to make you happy. No
+                      hassles, no problems.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -604,7 +749,7 @@ export default function Home() {
         {/* start of lets get started */}
 
         <section>
-          <div className="bg-gradient-to-t from-[#E8F7FD] to-white min-h-fit lg:min-h-screen flex flex-col items-center">
+          <div className="bg-gradient-to-t from-[#F9FAFB] to-white min-h-fit lg:min-h-screen flex flex-col items-center">
             <div className="w-full">
               <Image
                 src="/pattern_bg.png"
@@ -626,14 +771,19 @@ export default function Home() {
                   Still have questions?
                 </h1>
                 <p className="text-base md:text-lg">
-                  Don't stress over technical issues, concentrate on your <br className="hidden md:block" />
+                  Don't stress over technical issues, concentrate on your{" "}
+                  <br className="hidden md:block" />
                   business. We'll give you the help you need.
                 </p>
               </div>
 
               <div className="flex flex-col items-center justify-center w-full gap-4 mt-6 md:flex-row md:mt-10">
-                <CustomButton variant="primary">Speak to an Expert</CustomButton>
-                <CustomButton variant="link">Learn more about services</CustomButton>
+                <CustomButton variant="primary">
+                  Speak to an Expert
+                </CustomButton>
+                <CustomButton variant="link">
+                  Learn more about services
+                </CustomButton>
               </div>
 
               {/* Divider line - full width */}
@@ -660,11 +810,9 @@ export default function Home() {
               <LogoSlider logos={logos} />
             </div>
           </>
-
         </section>
 
         {/* End of Our Business */}
-
       </main>
 
       <Footer />

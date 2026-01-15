@@ -52,11 +52,11 @@ export default function SmatPropPage() {
     "description": "SmatProp is a comprehensive property and tenant management system designed for landlords and property managers. It streamlines rental operations through features like tenant screening, lease management, automated online payments, expense tracking, and real-time reconciliation.",
     "brand": {
       "@type": "Brand",
-      "name": "Sharetek Group"
+      "name": "SmaTech Group"
     },
-    "url": "https://Sharetekgroup.com/products/smatprop",
-    "logo": "https://Sharetekgroup.com/services_icon.svg",
-    "image": "https://Sharetekgroup.com/smat_prop_building.jpg",
+    "url": "https://smatechgroup.com/products/smatprop",
+    "logo": "https://smatechgroup.com/services_icon.svg",
+    "image": "https://smatechgroup.com/smat_prop_building.jpg",
     "featureList": [
       "Tenant Screening & History Checks",
       "Lease Management & Templates",
@@ -72,7 +72,7 @@ export default function SmatPropPage() {
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
-        "name": "Sharetek Group"
+        "name": "SmaTech Group"
       }
     }
   };
@@ -99,7 +99,7 @@ export default function SmatPropPage() {
         variants={fadeIn}
         className="p-6 text-center bg-white shadow-lg rounded-xl"
       >
-        <div className="text-4xl font-bold text-[#A00927] mb-2">
+        <div className="text-4xl font-bold text-[#03577A] mb-2">
           {inView ? <CountUp end={value} duration={2.5} suffix={suffix} /> : `0${suffix}`}
         </div>
         <p className="text-gray-600">{label}</p>
@@ -125,7 +125,7 @@ export default function SmatPropPage() {
       priority
       quality={90}
     />
-    <div className="absolute inset-0 bg-[#A00927]/20"></div>
+    <div className="absolute inset-0 bg-[#03577A]/20"></div>
   </div>
   
   <motion.div 
@@ -141,7 +141,7 @@ export default function SmatPropPage() {
     >
       <div className="relative flex items-center justify-center w-10 h-10">
         {/* Custom SVG icon for SmatProp */}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-[#A00927]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-[#8DC440]">
           <path d="M12 2L3 9v11a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9l-9-7z" />
           <path d="M9 22V12h6v10" />
           <path d="M11 18h2" />
@@ -153,7 +153,7 @@ export default function SmatPropPage() {
           <path d="M7 12h2" />
         </svg>
       </div>
-      <h1 className="text-[#A00927] text-sm lg:text-2xl font-bold">SmatProp</h1>
+      <h1 className="text-[#8DC440] text-sm lg:text-2xl font-bold">SmatProp</h1>
     </motion.div>
     
     <motion.h2 
@@ -172,7 +172,7 @@ export default function SmatPropPage() {
     
 <motion.div variants={fadeIn}>
   <Link href="#our-mission">
-    <span className="px-8 py-4 text-lg font-bold text-white bg-[#A00927] rounded-full shadow-lg transition-all duration-300 hover:bg-[#7bb033] hover:scale-105 focus:ring-4 focus:ring-[#A00927]/50 cursor-pointer">
+    <span className="px-8 py-4 text-lg font-bold text-white bg-[#8DC440] rounded-full shadow-lg transition-all duration-300 hover:bg-[#7bb033] hover:scale-105 focus:ring-4 focus:ring-[#8DC440]/50 cursor-pointer">
       Get Started Today
     </span>
   </Link>
@@ -229,7 +229,7 @@ export default function SmatPropPage() {
           className="pb-4 space-y-6 md:w-1/2"
         >
           <h2 className="text-3xl font-bold text-gray-800">Our Mission</h2>
-          <div className="w-20 h-1 bg-[#A00927] rounded-full"></div>
+          <div className="w-20 h-1 bg-[#8DC440] rounded-full"></div>
           <p className="text-lg text-gray-600">
             Our mission is to improve the lack of accountability in the rental sector from delinquent Tenants, whilst improving processes that make it easy for landlords to collect their rental on time and efficiently. Improved financial reporting for better decision making.
           </p>
@@ -242,7 +242,7 @@ export default function SmatPropPage() {
               "Automated payment tracking and reminders"
             ].map((item, index) => (
               <li key={index} className="flex items-start">
-                <FaCheckCircle className="w-5 h-5 mt-1 mr-3 text-[#A00927] flex-shrink-0" />
+                <FaCheckCircle className="w-5 h-5 mt-1 mr-3 text-[#8DC440] flex-shrink-0" />
                 <span className="text-gray-700">{item}</span>
               </li>
             ))}
@@ -264,7 +264,7 @@ export default function SmatPropPage() {
             <p className="max-w-2xl text-lg text-gray-600">
               Discover the powerful tools that make SmatProp the complete property management solution
             </p>
-            <div className="w-20 h-1 bg-[#A00927] rounded-full"></div>
+            <div className="w-20 h-1 bg-[#8DC440] rounded-full"></div>
           </div>
         </motion.div>
 
@@ -278,82 +278,82 @@ export default function SmatPropPage() {
           <HorizontalFooterAccordion
             items={[
               {
-                icon: <FaMoneyCheckAlt className="text-[#A00927] w-6 h-6" />,
+                icon: <FaMoneyCheckAlt className="text-[#03577A] w-6 h-6" />,
                 title: "Realtime Reconciliation",
                 description: "Our systems integrate seamlessly with banks, enabling real-time reconciliation of invoice payments, automatic alerts for unpaid invoices, and detection of negative payment patterns to help protect your revenue.",
               },
               {
-                icon: <FaFileContract className="text-[#A00927] w-6 h-6" />,
+                icon: <FaFileContract className="text-[#03577A] w-6 h-6" />,
                 title: "Relevant Lease Agreement Templates",
                 description: "We work with specialized legal consultants to create reusable, compliant lease agreement templates available at no extra cost, ensuring you always have up-to-date, relevant contracts on hand.",
               },
               {
-                icon: <FaShieldAlt className="text-[#A00927] w-6 h-6" />,
+                icon: <FaShieldAlt className="text-[#03577A] w-6 h-6" />,
                 title: "Blacklisting",
                 description: "Maintain a secure property environment by flagging and blacklisting problem tenants to prevent repeat offenses and protect your community from rental fraud.",
               },
               {
-                icon: <FaListAlt className="text-[#A00927] w-6 h-6" />,
+                icon: <FaListAlt className="text-[#03577A] w-6 h-6" />,
                 title: "Onboarding / Check Out Lists",
                 description: "Streamline tenant move-ins and move-outs with structured onboarding and checkout checklists, ensuring all legal and property requirements are properly handled.",
               },
               {
-                icon: <FaDollarSign className="text-[#A00927] w-6 h-6" />,
+                icon: <FaDollarSign className="text-[#03577A] w-6 h-6" />,
                 title: "Easy Interest Application",
                 description: "Automatically calculate and apply interest to late payments, supporting your cash flow and discouraging delayed payments without additional manual work.",
               },
               {
-                icon: <FaChartLine className="text-[#A00927] w-6 h-6" />,
+                icon: <FaChartLine className="text-[#03577A] w-6 h-6" />,
                 title: "Expenses Management",
                 description: "Gain clear oversight of your property expenses with smart tracking, categorization, and reporting tools that make it simple to control costs and optimize profitability.",
               },
               {
-                icon: <FaWrench className="text-[#A00927] w-6 h-6" />,
+                icon: <FaWrench className="text-[#03577A] w-6 h-6" />,
                 title: "Service Provider Management",
                 description: "Easily manage and coordinate with trusted service providers for repairs and maintenance through a centralized, efficient platform that improves response times.",
               },
               {
-                icon: <FaHome className="text-[#A00927] w-6 h-6" />,
+                icon: <FaHome className="text-[#03577A] w-6 h-6" />,
                 title: "White Labelled Platform",
                 description: "Offer your property management services under your own brand with a fully white-labelled solution that maintains your brand identity while leveraging powerful technology.",
               },
               {
-                icon: <FaCreditCard className="text-[#A00927] w-6 h-6" />,
+                icon: <FaCreditCard className="text-[#03577A] w-6 h-6" />,
                 title: "Credit / Tenant History Checks",
                 description: "Verify tenant reliability with comprehensive credit and history checks, helping you make confident leasing decisions and reduce the risk of defaults.",
               },
               {
-                icon: <FaRegFileAlt className="text-[#A00927] w-6 h-6" />,
+                icon: <FaRegFileAlt className="text-[#03577A] w-6 h-6" />,
                 title: "Reporting",
                 description: "Generate detailed reports on payments, maintenance, and tenant activity to gain valuable insights, stay compliant, and make data-driven decisions for your property portfolio.",
               },
               {
-                icon: <FaCreditCard className="text-[#A00927] w-6 h-6" />,
+                icon: <FaCreditCard className="text-[#03577A] w-6 h-6" />,
                 title: "Flexible Payment Options",
                 description: "Offer tenants modern, flexible ways to pay their rent, including scheduled payments, multiple payment gateways, and partial payment plans to improve collections.",
               },
               {
-                icon: <FaTools className="text-[#A00927] w-6 h-6" />,
+                icon: <FaTools className="text-[#03577A] w-6 h-6" />,
                 title: "Repair Allocation",
                 description: "Simplify repair assignments by automatically routing work to the right contractors, ensuring efficient maintenance and minimizing downtime for tenants.",
               },
               {
-                icon: <FaBell className="text-[#A00927] w-6 h-6" />,
+                icon: <FaBell className="text-[#03577A] w-6 h-6" />,
                 title: "Payment Reminders",
                 description: "Automated payment reminders help tenants stay on track with their obligations, reducing late payments and improving cash flow consistency.",
               },
               {
-                icon: <FaGlobe className="text-[#A00927] w-6 h-6" />,
+                icon: <FaGlobe className="text-[#03577A] w-6 h-6" />,
                 title: "Multi-Country Support",
                 description: "Manage properties across multiple countries with ease, using built-in tools for different currencies, languages, and local compliance regulations.",
               },
               {
-                icon: <FaFileContract className="text-[#A00927] w-6 h-6" />,
+                icon: <FaFileContract className="text-[#03577A] w-6 h-6" />,
                 title: "Lease Management",
                 description: "Easily draft, renew, and manage lease agreements through a centralized, automated system that minimizes paperwork and ensures accuracy.",
               },
               {
-                icon: <FaMoneyCheckAlt className="text-[#A00927] w-6 h-6" />,
+                icon: <FaMoneyCheckAlt className="text-[#03577A] w-6 h-6" />,
                 title: "Online Payments",
                 description: "Collect rent and fees securely through online payment processing, giving tenants a convenient, trusted, and fast way to fulfill their financial commitments.",
               },
@@ -400,7 +400,7 @@ export default function SmatPropPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="px-6 py-16 bg-[#A00927] text-white md:px-24 md:py-24">
+      <section className="px-6 py-16 bg-[#03577A] text-white md:px-24 md:py-24">
         <motion.div 
           initial="hidden"
           whileInView="visible"
@@ -414,11 +414,11 @@ export default function SmatPropPage() {
           </p>
           
           <div className="flex flex-col justify-center gap-4 mt-8 sm:flex-row">
-            <button className="px-8 py-4 text-lg font-bold text-[#A00927] bg-[#A00927] rounded-full shadow-lg transition-all duration-300 hover:bg-white hover:scale-105">
+            <button className="px-8 py-4 text-lg font-bold text-[#03577A] bg-[#8DC440] rounded-full shadow-lg transition-all duration-300 hover:bg-white hover:scale-105">
               Start Free Trial
             </button>
             <Link href="/contact-us">
-  <span className="px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full shadow-lg transition-all duration-300 hover:bg-white hover:text-[#A00927] cursor-pointer inline-block text-center">
+  <span className="px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full shadow-lg transition-all duration-300 hover:bg-white hover:text-[#03577A] cursor-pointer inline-block text-center">
     Schedule a Demo
   </span>
 </Link>

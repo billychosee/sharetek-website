@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import NextImage from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-export default function Footer() {
+function Footer() {
   const [formData, setFormData] = useState({ email: "", message: "" });
   const [statusMessage, setStatusMessage] = useState("");
   const [isError, setIsError] = useState(false);
@@ -29,14 +28,14 @@ export default function Footer() {
       };
 
       const bodyFormData = new FormData();
-      bodyFormData.append("source", "Sharetek_website");
+      bodyFormData.append("source", "sharetek_website");
       bodyFormData.append("status", "New");
       bodyFormData.append("email", formData.email);
       bodyFormData.append("description", formData.message);
       bodyFormData.append("name", "Unknown");
       bodyFormData.append("assigned", "Michelle Muhenyeri");
 
-      const response = await fetch("https://erp.sharetek.com/api/leads", {
+      const response = await fetch("https://erp.sharetekgroup.com/api/leads", {
         method: "POST",
         headers: headers,
         body: bodyFormData,
@@ -59,7 +58,7 @@ export default function Footer() {
     <div className="relative w-full">
       {/* Background image with opacity */}
       <div
-        className="absolute inset-0 bg-[#020626] opacity-100 z-0"
+        className="absolute inset-0 z-0 opacity-100 bg-[#020626]"
         style={{
           backgroundImage: `url('/world_bg.svg')`,
           backgroundSize: "cover",
@@ -71,24 +70,24 @@ export default function Footer() {
       <div className="relative z-10 w-full px-5 pt-10 text-gray-400 md:px-24 md:pt-24 ">
         {/* Top section with logo, text, and arrow */}
         <div className="flex flex-col items-center justify-between gap-5 px-0 mb-20 md:flex-row md:items-start group xl:px-5 lg:px-0">
-          <div className="w-24 md:w-16">
+          <div className="w-20 md:w-14">
             <a href="/">
-              <NextImage
-                src="/sharetek_logo.svg"
-                alt="Sharetek Logo"
-                width={120}
-                height={40}
-                className="w-auto h-12"
+              <img
+                src="/sharetek-symbol.svg"
+                alt="Sharetek Symbol"
+                width={260}
+                height={31}
+                className="w-full h-auto"
               />
             </a>
           </div>
-          <h1 className="text-xl text-center md:text-left xl:text-2xl lg:text-xl font-bold w-full md:w-full group-hover:text-[#A00927] cursor-pointer transition-colors duration-300 text-white md:ml-48 ml-0">
+          <h1 className="w-full ml-0 text-xl font-bold text-center text-white transition-colors duration-300 cursor-pointer md:text-left xl:text-2xl lg:text-xl md:w-full group-hover:text-[#A00927] md:ml-48">
             Contact us today to embark on a journey toward seamless <br />{" "}
             communication and dynamic collaboration.
           </h1>
           <a href="/" className="hidden md:block">
             <ArrowUpRight
-              className="mt-2 text-white transition-colors duration-300 group-hover:text-[#A00927] cursor-pointer"
+              className="mt-2 text-white transition-colors duration-300 cursor-pointer group-hover:text-[#A00927]"
               size={28}
             />
           </a>
@@ -119,7 +118,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://erp.sharetek.com/recruitment/recruitment_portal"
+                  href="https://erp.sharetekgroup.com/recruitment/recruitment_portal"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,14 +142,18 @@ export default function Footer() {
             <div className="flex flex-col items-center gap-5 md:items-start">
               <a href="/contact-us">
                 <div className="flex items-start gap-3 mb-2 cursor-pointer hover:opacity-80">
-                  <span className="w-10 text-sm font-bold text-center text-white">
-                    ST
-                  </span>
+                  <img
+                    src="/smatech_t_logo.svg"
+                    alt="Chat icon"
+                    width={20}
+                    height={20}
+                    className="w-10 object"
+                  />
                   <div>
                     <p className="font-medium">Chat with an expert</p>
                     <div className="flex items-center gap-1">
                       <p className="text-xs text-white">Online now</p>
-                      <span className="w-2 h-2 rounded-full bg-[#27282C]"></span>
+                      <span className="w-2 h-2 rounded-full bg-[#00b956]"></span>
                     </div>
                   </div>
                 </div>
@@ -165,8 +168,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FiMail className="text-white" size={20} />
-                <a href="mailto:info@sharetek.com" className="hover:underline">
-                  info@sharetek.com
+                <a
+                  href="mailto:info@sharetekgroup.com"
+                  className="hover:underline"
+                >
+                  info@sharetekgroup.com
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -177,7 +183,7 @@ export default function Footer() {
               {/* Social Media Icons */}
               <div className="flex items-center gap-4 mt-5">
                 <a
-                  href="https://www.linkedin.com/company/sharetek"
+                  href="https://www.linkedin.com/company/Sharetekgroup"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -188,7 +194,7 @@ export default function Footer() {
                   />
                 </a>
                 <a
-                  href="https://x.com/sharetek"
+                  href="https://x.com/Sharetekgroup"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -199,7 +205,7 @@ export default function Footer() {
                   />
                 </a>
                 <a
-                  href="https://www.facebook.com/people/Sharetek/61550869614254"
+                  href="https://www.facebook.com/Sharetekgroup"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -210,7 +216,7 @@ export default function Footer() {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/Sharetek_"
+                  href="https://www.instagram.com/sharetek"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
@@ -253,13 +259,13 @@ export default function Footer() {
               />
               <button
                 type="submit"
-                className="w-full bg-[#A00927] text-white px-5 py-2 rounded hover:bg-[#27282C] transition"
+                className="w-full px-5 py-2 text-white transition rounded bg-[#A00927] hover:bg-[#27282C]"
               >
                 Send
               </button>
               {statusMessage && (
                 <p
-                  className={`mt-2 text-sm text-center ${isError ? "text-red-500" : "text-primary"}`}
+                  className={`mt-2 text-sm text-center ${isError ? "text-red-500" : "text-green-500"}`}
                 >
                   {statusMessage}
                 </p>
@@ -277,3 +283,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;

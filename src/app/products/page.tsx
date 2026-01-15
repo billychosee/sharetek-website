@@ -25,8 +25,8 @@ export const metadata = {
   openGraph: {
     title: 'SmatProp | Modern Property Management Software',
     description: 'Streamline rental operations with tenant credit checks, lease tracking, and online payment processing for residential and commercial properties.',
-    url: 'https://Sharetekgroup.com/products/smatprop',
-    siteName: 'Sharetek Group'
+    url: 'https://smatechgroup.com/products/smatprop',
+    siteName: 'SmaTech Group'
   }
 };
 
@@ -42,11 +42,11 @@ export default function SmatPropPage() {
     "description": "SmatProp is a comprehensive property and tenant management system designed for landlords and property managers. It streamlines rental operations through features like tenant screening, lease management, automated online payments, expense tracking, and real-time reconciliation.",
     "brand": {
       "@type": "Brand",
-      "name": "Sharetek Group"
+      "name": "SmaTech Group"
     },
-    "url": "https://Sharetekgroup.com/products/smatprop",
-    "logo": "https://Sharetekgroup.com/services_icon.svg",
-    "image": "https://Sharetekgroup.com/smat_prop_building.jpg",
+    "url": "https://smatechgroup.com/products/smatprop",
+    "logo": "https://smatechgroup.com/services_icon.svg",
+    "image": "https://smatechgroup.com/smat_prop_building.jpg",
     "featureList": [
       "Tenant Screening & History Checks",
       "Lease Management & Templates",
@@ -62,7 +62,7 @@ export default function SmatPropPage() {
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
-        "name": "Sharetek Group"
+        "name": "SmaTech Group"
       }
     }
   };
@@ -91,7 +91,7 @@ export default function SmatPropPage() {
                 className="object-contain"
               />
             </div>
-            <h1 className="text-[#A00927] text-sm lg:text-2xl font-bold">Our Products</h1>
+            <h1 className="text-[#8DC440] text-sm lg:text-2xl font-bold">Our Products</h1>
           </div>
           <h2 className="text-3xl font-bold text-white lg:text-5xl">SmatProp</h2>
           <p className="text-base text-white">
@@ -132,97 +132,97 @@ export default function SmatPropPage() {
         <HorizontalFooterAccordion
           items={[
             {
-              icon: <FaMoneyCheckAlt className="text-[#A00927] w-6 h-6" />,
+              icon: <FaMoneyCheckAlt className="text-[#03577A] w-6 h-6" />,
               title: "Realtime Reconciliation",
               description:
                 "Our systems integrate seamlessly with banks, enabling real-time reconciliation of invoice payments, automatic alerts for unpaid invoices, and detection of negative payment patterns to help protect your revenue.",
             },
             {
-              icon: <FaFileContract className="text-[#A00927] w-6 h-6" />,
+              icon: <FaFileContract className="text-[#03577A] w-6 h-6" />,
               title: "Relevant Lease Agreement Templates",
               description:
                 "We work with specialized legal consultants to create reusable, compliant lease agreement templates available at no extra cost, ensuring you always have up-to-date, relevant contracts on hand.",
             },
             {
-              icon: <FaShieldAlt className="text-[#A00927] w-6 h-6" />,
+              icon: <FaShieldAlt className="text-[#03577A] w-6 h-6" />,
               title: "Blacklisting",
               description:
                 "Maintain a secure property environment by flagging and blacklisting problem tenants to prevent repeat offenses and protect your community from rental fraud.",
             },
             {
-              icon: <FaListAlt className="text-[#A00927] w-6 h-6" />,
+              icon: <FaListAlt className="text-[#03577A] w-6 h-6" />,
               title: "Onboarding / Check Out Lists",
               description:
                 "Streamline tenant move-ins and move-outs with structured onboarding and checkout checklists, ensuring all legal and property requirements are properly handled.",
             },
             {
-              icon: <FaDollarSign className="text-[#A00927] w-6 h-6" />,
+              icon: <FaDollarSign className="text-[#03577A] w-6 h-6" />,
               title: "Easy Interest Application",
               description:
                 "Automatically calculate and apply interest to late payments, supporting your cash flow and discouraging delayed payments without additional manual work.",
             },
             {
-              icon: <FaChartLine className="text-[#A00927] w-6 h-6" />,
+              icon: <FaChartLine className="text-[#03577A] w-6 h-6" />,
               title: "Expenses Management",
               description:
                 "Gain clear oversight of your property expenses with smart tracking, categorization, and reporting tools that make it simple to control costs and optimize profitability.",
             },
             {
-              icon: <FaWrench className="text-[#A00927] w-6 h-6" />,
+              icon: <FaWrench className="text-[#03577A] w-6 h-6" />,
               title: "Service Provider Management",
               description:
                 "Easily manage and coordinate with trusted service providers for repairs and maintenance through a centralized, efficient platform that improves response times.",
             },
             {
-              icon: <FaHome className="text-[#A00927] w-6 h-6" />,
+              icon: <FaHome className="text-[#03577A] w-6 h-6" />,
               title: "White Labelled Platform",
               description:
                 "Offer your property management services under your own brand with a fully white-labelled solution that maintains your brand identity while leveraging powerful technology.",
             },
             {
-              icon: <FaCreditCard className="text-[#A00927] w-6 h-6" />,
+              icon: <FaCreditCard className="text-[#03577A] w-6 h-6" />,
               title: "Credit / Tenant History Checks",
               description:
                 "Verify tenant reliability with comprehensive credit and history checks, helping you make confident leasing decisions and reduce the risk of defaults.",
             },
             {
-              icon: <FaRegFileAlt className="text-[#A00927] w-6 h-6" />,
+              icon: <FaRegFileAlt className="text-[#03577A] w-6 h-6" />,
               title: "Reporting",
               description:
                 "Generate detailed reports on payments, maintenance, and tenant activity to gain valuable insights, stay compliant, and make data-driven decisions for your property portfolio.",
             },
             {
-              icon: <FaCreditCard className="text-[#A00927] w-6 h-6" />,
+              icon: <FaCreditCard className="text-[#03577A] w-6 h-6" />,
               title: "Flexible Payment Options",
               description:
                 "Offer tenants modern, flexible ways to pay their rent, including scheduled payments, multiple payment gateways, and partial payment plans to improve collections.",
             },
             {
-              icon: <FaTools className="text-[#A00927] w-6 h-6" />,
+              icon: <FaTools className="text-[#03577A] w-6 h-6" />,
               title: "Repair Allocation",
               description:
                 "Simplify repair assignments by automatically routing work to the right contractors, ensuring efficient maintenance and minimizing downtime for tenants.",
             },
             {
-              icon: <FaBell className="text-[#A00927] w-6 h-6" />,
+              icon: <FaBell className="text-[#03577A] w-6 h-6" />,
               title: "Payment Reminders",
               description:
                 "Automated payment reminders help tenants stay on track with their obligations, reducing late payments and improving cash flow consistency.",
             },
             {
-              icon: <FaGlobe className="text-[#A00927] w-6 h-6" />,
+              icon: <FaGlobe className="text-[#03577A] w-6 h-6" />,
               title: "Multi-Country Support",
               description:
                 "Manage properties across multiple countries with ease, using built-in tools for different currencies, languages, and local compliance regulations.",
             },
             {
-              icon: <FaFileContract className="text-[#A00927] w-6 h-6" />,
+              icon: <FaFileContract className="text-[#03577A] w-6 h-6" />,
               title: "Lease Management",
               description:
                 "Easily draft, renew, and manage lease agreements through a centralized, automated system that minimizes paperwork and ensures accuracy.",
             },
             {
-              icon: <FaMoneyCheckAlt className="text-[#A00927] w-6 h-6" />,
+              icon: <FaMoneyCheckAlt className="text-[#03577A] w-6 h-6" />,
               title: "Online Payments",
               description:
                 "Collect rent and fees securely through online payment processing, giving tenants a convenient, trusted, and fast way to fulfill their financial commitments.",

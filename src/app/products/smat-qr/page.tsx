@@ -75,13 +75,13 @@ export default function SmatQr() {
     "@type": "Product",
     "name": "SmatQR",
     "description": "SmatQR is a contactless digital menu and ordering system for restaurants, cafes, and other food service businesses. It enables customers to view menus, place orders, and pay directly from their smartphones by scanning a QR code.",
-    "brand": { "@type": "Brand", "name": "Sharetek Group" },
-    "url": "https://Sharetekgroup.com/products/smatqr",
-    "logo": "https://Sharetekgroup.com/services_icon.svg",
-    "image": "https://Sharetekgroup.com/smat_qr_phone.jpg",
+    "brand": { "@type": "Brand", "name": "SmaTech Group" },
+    "url": "https://smatechgroup.com/products/smatqr",
+    "logo": "https://smatechgroup.com/services_icon.svg",
+    "image": "https://smatechgroup.com/smat_qr_phone.jpg",
     "slogan": "Transform your restaurant with contactless QR code menus, seamless ordering, and integrated payments.",
     "audience": { "@type": "Audience", "audienceType": "Restaurants, Coffee Shops, Cafes" },
-    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "Sharetek Group" } }
+    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": "SmaTech Group" } }
   };
 
   return (
@@ -95,7 +95,7 @@ export default function SmatQr() {
     <div className="flex items-center gap-4 mb-6">
       <div className="relative flex items-center justify-center w-10 h-10">
         {/* Custom SVG QR code icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-[#A00927]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-full h-full text-[#8DC440]">
           <rect x="3" y="3" width="7" height="7" rx="1" />
           <rect x="14" y="3" width="7" height="7" rx="1" />
           <rect x="3" y="14" width="7" height="7" rx="1" />
@@ -110,11 +110,11 @@ export default function SmatQr() {
           <path d="M12 20h.01" />
         </svg>
       </div>
-      <h1 className="text-[#A00927] text-sm lg:text-2xl font-bold">SmatQr</h1>
+      <h1 className="text-[#8DC440] text-sm lg:text-2xl font-bold">SmatQr</h1>
     </div>
 
     <h2 className="text-4xl font-bold lg:text-5xl">
-      Revolutionize Your Restaurant with <span className="text-[#A00927]">SmatQR</span>
+      Revolutionize Your Restaurant with <span className="text-[#8DC440]">SmatQR</span>
     </h2>
 
     <p className="max-w-2xl text-xl">
@@ -122,10 +122,10 @@ export default function SmatQr() {
     </p>
 
     <div className="flex flex-col gap-4 sm:flex-row">
-      <a href="https://www.smatqr.com/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 text-lg font-bold text-white bg-[#A00927] rounded-full shadow-lg hover:bg-primary hover:scale-105">
+      <a href="https://www.smatqr.com/" target="_blank" rel="noopener noreferrer" className="px-8 py-4 text-lg font-bold text-white bg-[#8DC440] rounded-full shadow-lg hover:bg-[#7bb033] hover:scale-105">
         Get Started Today
       </a>
-      <a href="#features" className="px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full shadow-lg hover:bg-white hover:text-[#A00927]">
+      <a href="#features" className="px-8 py-4 text-lg font-bold text-white bg-transparent border-2 border-white rounded-full shadow-lg hover:bg-white hover:text-[#03577A]">
         Learn More
       </a>
     </div>
@@ -142,9 +142,9 @@ export default function SmatQr() {
             with a fast and convenient way to access restaurant menus and place orders directly from their devices.
           </p>
           <ul className="mt-6 space-y-3 text-black">
-            <li className="flex items-center"><FaCheckCircle className="mr-3 text-primary" />No app download required</li>
-            <li className="flex items-center"><FaCheckCircle className="mr-3 text-primary" />Set up in less than 24 hours</li>
-            <li className="flex items-center"><FaCheckCircle className="mr-3 text-primary" />24/7 customer support</li>
+            <li className="flex items-center"><FaCheckCircle className="mr-3 text-green-500" />No app download required</li>
+            <li className="flex items-center"><FaCheckCircle className="mr-3 text-green-500" />Set up in less than 24 hours</li>
+            <li className="flex items-center"><FaCheckCircle className="mr-3 text-green-500" />24/7 customer support</li>
           </ul>
         </div>
 
@@ -154,7 +154,7 @@ export default function SmatQr() {
       </div>
 
       {/* Stats Section */}
-      <div className="px-6 py-12 bg-[#A00927] text-white">
+      <div className="px-6 py-12 bg-[#03577A] text-white">
         <div className="container grid grid-cols-1 gap-8 mx-auto md:grid-cols-3 md:px-24">
           <StatCounter end={40} suffix="%" text="Faster Service" />
           <StatCounter end={80} suffix="%" text="Reduced Printing Costs" />
@@ -165,7 +165,7 @@ export default function SmatQr() {
       {/* Key Features */}
       <section className="px-6 py-16 md:px-24">
         <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-primary">Key Product Features</h2>
+          <h2 className="text-3xl font-bold text-[#4A90A4]">Key Product Features</h2>
         </div>
         <div className="grid grid-cols-1 gap-10 p-8 sm:grid-cols-2 md:grid-cols-3">
           <FeatureCard icon={FaQrcode} title="Instant Menu Access" description="Customers scan a QR code to view your digital menu immediately, no app download needed." />
@@ -183,10 +183,10 @@ export default function SmatQr() {
       {/* Benefits Section */}
       <div className="px-6 py-24 md:px-24">
         <h2 className="mb-12 text-4xl font-bold text-center text-black">Benefits of SmatQR</h2>
-        <FooterAccordion2 icon={<FaDollarSign className="text-[#A00927] w-6 h-6" />} title="Save Time & Money" description="Reduce costs associated with printing and distributing traditional menus." />
-        <FooterAccordion2 icon={<FaHeart className="text-[#A00927] w-6 h-6" />} title="Increase Customer Loyalty" description="Reduce customer wait times for better satisfaction and loyalty." />
-        <FooterAccordion2 icon={<FaClock className="text-[#A00927] w-6 h-6" />} title="Boost Operational Efficiency" description="Customers place orders faster via QR code, saving time." />
-        <FooterAccordion2 icon={<FaChartLine className="text-[#A00927] w-6 h-6" />} title="Enhance Data Management" description="Store and analyze valuable customer order and payment data." />
+        <FooterAccordion2 icon={<FaDollarSign className="text-[#03577A] w-6 h-6" />} title="Save Time & Money" description="Reduce costs associated with printing and distributing traditional menus." />
+        <FooterAccordion2 icon={<FaHeart className="text-[#03577A] w-6 h-6" />} title="Increase Customer Loyalty" description="Reduce customer wait times for better satisfaction and loyalty." />
+        <FooterAccordion2 icon={<FaClock className="text-[#03577A] w-6 h-6" />} title="Boost Operational Efficiency" description="Customers place orders faster via QR code, saving time." />
+        <FooterAccordion2 icon={<FaChartLine className="text-[#03577A] w-6 h-6" />} title="Enhance Data Management" description="Store and analyze valuable customer order and payment data." />
       </div>
 
       {/* Target Market */}
@@ -200,14 +200,14 @@ export default function SmatQr() {
       </div>
 
       {/* Contact CTA */}
-      <section className="relative flex items-center justify-center px-6 py-24 overflow-hidden text-center bg-[#A00927] md:px-24">
-        <div className="absolute inset-0 bg-[#A00927] opacity-90"></div>
+      <section className="relative flex items-center justify-center px-6 py-24 overflow-hidden text-center bg-[#03577A] md:px-24">
+        <div className="absolute inset-0 bg-[#03577A] opacity-90"></div>
         <div className="relative z-20 max-w-4xl mx-auto space-y-8 text-white">
           <h2 className="text-4xl font-extrabold lg:text-6xl">Ready to Ditch Paper Menus?</h2>
           <p className="text-lg lg:text-xl text-white/90">
             Join hundreds of restaurants, cafes, and bars transforming their service with SmatQR. Get a custom quote today.
           </p>
-          <a href="#" className="inline-flex items-center px-12 py-5 text-xl font-bold text-[#A00927] bg-[#A00927] rounded-full shadow-lg hover:scale-105 hover:bg-white">
+          <a href="#" className="inline-flex items-center px-12 py-5 text-xl font-bold text-[#03577A] bg-[#8DC440] rounded-full shadow-lg hover:scale-105 hover:bg-white">
             Book a Free Consultation
           </a>
         </div>
@@ -223,4 +223,3 @@ export default function SmatQr() {
     </div>
   );
 }
-

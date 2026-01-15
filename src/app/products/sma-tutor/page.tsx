@@ -43,7 +43,7 @@ const FAQItem = ({ item, idx }: { item: { q: string; a: string }; idx: number })
       <div className="flex items-center justify-between">
         <h3 className="text-lg font-semibold text-[#0577DD]">{item.q}</h3>
         <FaChevronDown
-          className={`transform transition-transform duration-300 ${isOpen ? "rotate-180 text-[#A00927]" : "rotate-0 text-[#0577DD]"}`}
+          className={`transform transition-transform duration-300 ${isOpen ? "rotate-180 text-[#8DC440]" : "rotate-0 text-[#0577DD]"}`}
         />
       </div>
       <AnimatePresence>
@@ -84,11 +84,11 @@ export default function SmaTutorPage() {
         <motion.div initial="hidden" animate="visible" variants={fadeIn} className="relative z-10 max-w-3xl p-6 space-y-8 text-white">
           <div className="flex items-center gap-4 mb-6">
             <FaGraduationCap className="w-10 h-10 text-white" />
-            <h1 className="text-[#A00927] text-sm lg:text-2xl font-bold">SmaTutor</h1>
+            <h1 className="text-[#8DC440] text-sm lg:text-2xl font-bold">SmaTutor</h1>
           </div>
 
           <h2 className="text-4xl font-bold lg:text-5xl">
-            Empowering <span className="text-[#A00927]">Students</span> & <span className="text-[#A00927]">Tutors</span> to Thrive Together
+            Empowering <span className="text-[#8DC440]">Students</span> & <span className="text-[#8DC440]">Tutors</span> to Thrive Together
           </h2>
 
           <p className="max-w-2xl text-xl">
@@ -129,8 +129,8 @@ export default function SmaTutorPage() {
       <h2 className="text-3xl font-bold text-[#0577DD]">What is SmaTutor?</h2>
       <p className="text-lg leading-relaxed text-gray-700">
         SmaTutor is a modern e-learning platform that connects 
-        <span className="text-[#A00927] font-semibold"> students</span> 
-        with expert <span className="text-[#A00927] font-semibold">tutors</span>. 
+        <span className="text-[#8DC440] font-semibold"> students</span> 
+        with expert <span className="text-[#8DC440] font-semibold">tutors</span>. 
         Whether you’re learning or teaching, SmaTutor empowers 
         growth through flexible learning, secure payments, 
         and a mobile-first experience.
@@ -141,7 +141,7 @@ export default function SmaTutorPage() {
         
         {/* Card 1 */}
         <div className="flex flex-col items-center justify-center p-6 transition bg-white shadow rounded-2xl hover:shadow-lg">
-          <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r from-[#0577DD] to-[#A00927] text-white text-2xl">
+          <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r from-[#0577DD] to-[#8DC440] text-white text-2xl">
             <FaUserGraduate />
           </div>
           <h3 className="mt-4 font-semibold text-gray-900">Expert Tutors</h3>
@@ -149,7 +149,7 @@ export default function SmaTutorPage() {
 
         {/* Card 2 */}
         <div className="flex flex-col items-center justify-center p-6 transition bg-white shadow rounded-2xl hover:shadow-lg">
-          <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r from-[#A00927] to-[#0577DD] text-white text-2xl">
+          <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-r from-[#8DC440] to-[#0577DD] text-white text-2xl">
             <FaChalkboardTeacher />
           </div>
           <h3 className="mt-4 font-semibold text-gray-900">Flexible Learning</h3>
@@ -195,7 +195,7 @@ export default function SmaTutorPage() {
         >
           <FaGraduationCap size={100} />
         </motion.div>
-        <motion.div className="absolute bottom-10 right-10 text-[#A00927]/10"
+        <motion.div className="absolute bottom-10 right-10 text-[#8DC440]/10"
           animate={{ y: [0, -15, 0], rotate: [0, -15, 15, 0] }}
           transition={{ duration: 10, repeat: Infinity }}
         >
@@ -229,7 +229,7 @@ export default function SmaTutorPage() {
           </motion.div>
 
           {/* Connector */}
-          <motion.div className="w-1 h-20 bg-gradient-to-b from-[#0577DD] to-[#A00927] rounded-full"
+          <motion.div className="w-1 h-20 bg-gradient-to-b from-[#0577DD] to-[#8DC440] rounded-full"
             initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }}
             viewport={{ once: true }} transition={{ duration: 0.8 }}
           />
@@ -249,7 +249,7 @@ export default function SmaTutorPage() {
           </motion.div>
 
           {/* Connector */}
-          <motion.div className="w-1 h-20 bg-gradient-to-b from-[#0577DD] to-[#A00927] rounded-full"
+          <motion.div className="w-1 h-20 bg-gradient-to-b from-[#0577DD] to-[#8DC440] rounded-full"
             initial={{ scaleY: 0 }} whileInView={{ scaleY: 1 }}
             viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.3 }}
           />
@@ -301,7 +301,7 @@ export default function SmaTutorPage() {
       </section>
 
       {/* App Section */}
-      <section className="px-6 py-20 md:px-24 bg-primary/10">
+      <section className="px-6 py-20 md:px-24 bg-blue-50">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="space-y-6">
             <h2 className="text-3xl font-bold text-[#0577DD]">SmaTutor Mobile App</h2>
@@ -335,7 +335,7 @@ export default function SmaTutorPage() {
       {/* CTA */}
       <section className="relative px-6 py-20 md:px-24 bg-[#0577DD] text-white text-center overflow-hidden">
         {/* Blobs */}
-        <motion.div className="absolute -top-20 -left-20 w-72 h-72 bg-[#A00927] rounded-full blur-3xl opacity-30"
+        <motion.div className="absolute -top-20 -left-20 w-72 h-72 bg-[#8DC440] rounded-full blur-3xl opacity-30"
           animate={{ x: [0, 40, 0], y: [0, 20, 0] }}
           transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -343,7 +343,7 @@ export default function SmaTutorPage() {
           animate={{ x: [0, -30, 0], y: [0, -40, 0] }}
           transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         />
-        <motion.div className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#A00927] rounded-full blur-3xl opacity-25"
+        <motion.div className="absolute bottom-0 left-1/3 w-96 h-96 bg-[#8DC440] rounded-full blur-3xl opacity-25"
           animate={{ x: [0, 20, -20, 0], y: [0, 30, -30, 0] }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
         />

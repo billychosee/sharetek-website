@@ -58,19 +58,19 @@ export default function SmatPay() {
             "SmatPay is Zimbabwe's leading payment gateway, enabling businesses to accept local and international payments via EcoCash, InnBucks, Visa, Mastercard, and ZimSwitch. Features include ZIMRA fiscalisation, flexible fee structures, and quick payouts.",
         provider: {
             "@type": "Organization",
-            name: "Sharetek Group",
+            name: "SmaTech Group",
         },
         areaServed: {
             "@type": "Country",
             name: "Zimbabwe",
         },
-        url: "https://Sharetekgroup.com/products/smatpay",
-        logo: "https://Sharetekgroup.com/services_icon.svg",
-        image: "https://Sharetekgroup.com/smat_pay_methods.png",
+        url: "https://smatechgroup.com/products/smatpay",
+        logo: "https://smatechgroup.com/services_icon.svg",
+        image: "https://smatechgroup.com/smat_pay_methods.png",
         potentialAction: {
             "@type": "RegisterAction",
             name: "Register for SmatPay",
-            target: "https://Sharetekgroup.com/products/smatpay",
+            target: "https://smatechgroup.com/products/smatpay",
         },
     };
 
@@ -134,13 +134,13 @@ export default function SmatPay() {
                 <motion.div initial="hidden" animate="visible" variants={fadeIn} className="relative z-10 max-w-3xl p-6 space-y-8 text-white">
                     <div className="flex items-center gap-4 mb-6">
                         <div className="relative flex items-center justify-center w-10 h-10">
-                            <FaCreditCard className="w-full h-full text-[#A00927]" />
+                            <FaCreditCard className="w-full h-full text-[#8DC440]" />
                         </div>
-                        <h1 className="text-[#A00927] text-sm lg:text-2xl font-bold">SmatPay</h1>
+                        <h1 className="text-[#8DC440] text-sm lg:text-2xl font-bold">SmatPay</h1>
                     </div>
 
                     <h2 className="text-4xl font-bold lg:text-5xl">
-                        Secure and Simple Payments with <span className="text-[#A00927]">SmatPay</span>
+                        Secure and Simple Payments with <span className="text-[#8DC440]">SmatPay</span>
                     </h2>
 
                     <p className="max-w-2xl text-xl">
@@ -153,7 +153,7 @@ export default function SmatPay() {
     href="https://www.smatpay.africa"
     target="_blank"
     rel="noopener noreferrer"
-    className="px-8 py-4 text-lg font-bold text-white bg-[#A00927] rounded-full shadow-lg hover:bg-primary hover:scale-105"
+    className="px-8 py-4 text-lg font-bold text-white bg-[#8DC440] rounded-full shadow-lg hover:bg-[#7bb033] hover:scale-105"
   >
     Get Started Today
   </a>
@@ -204,7 +204,7 @@ export default function SmatPay() {
                             <h2 className="text-3xl font-bold text-gray-800 md:text-4xl">
                                 Why Choose SmatPay?
                             </h2>
-                            <div className="w-20 h-1 my-4 bg-[#A00927] rounded-full"></div>
+                            <div className="w-20 h-1 my-4 bg-[#8DC440] rounded-full"></div>
                             <p className="mt-4 text-gray-600">
                                 SmatPay is designed specifically for the Zimbabwean market,
                                 addressing the unique challenges faced by businesses in our
@@ -220,7 +220,7 @@ export default function SmatPay() {
                                     "Dedicated support from payment experts",
                                 ].map((benefit, index) => (
                                     <div key={index} className="flex items-start">
-                                        <FaCheckCircle className="w-6 h-6 mt-1 mr-3 text-[#A00927] flex-shrink-0" />
+                                        <FaCheckCircle className="w-6 h-6 mt-1 mr-3 text-[#8DC440] flex-shrink-0" />
                                         <span className="text-gray-700">{benefit}</span>
                                     </div>
                                 ))}
@@ -358,7 +358,7 @@ export default function SmatPay() {
           href="https://www.smatpay.africa"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-8 py-4 text-lg font-bold text-white bg-[#A00927] rounded-xl shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 hover:text-[#8140D5] focus:ring-4 focus:ring-[#A00927]/50 cursor-pointer"
+          className="px-8 py-4 text-lg font-bold text-white bg-[#8DC440] rounded-xl shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 hover:text-[#8140D5] focus:ring-4 focus:ring-[#8DC440]/50 cursor-pointer"
         >
           Create Account
         </a>
@@ -385,7 +385,7 @@ export default function SmatPay() {
                 <div className="px-4 py-10 md:px-20 bg-[#ffffff]">
                     <div className="flex items-center my-10">
                         <div className="flex-grow border-t border-gray-400"></div>
-                        <span className="mx-4 text-sm font-semibold text-[#27282C] whitespace-nowrap">
+                        <span className="mx-4 text-sm font-semibold text-[#00b956] whitespace-nowrap">
                             ACCEPTED PAYMENT METHODS
                         </span>
                         <div className="flex-grow border-t border-gray-400"></div>

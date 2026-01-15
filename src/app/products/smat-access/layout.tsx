@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'SmatAccess | Secure & Scalable Physical Access Control',
     description: 'Manage and monitor all access points with SmatAccess, providing enhanced security, real-time monitoring, and easy integration for various industries.',
-    url: 'https://Sharetekgroup.com/products/smataccess',
-    siteName: 'Sharetek Group'
+    url: 'https://smatechgroup.com/products/smataccess',
+    siteName: 'SmaTech Group'
   }
 };
 
