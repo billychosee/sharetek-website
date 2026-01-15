@@ -93,13 +93,15 @@ const ContactPage = () => {
                 <p className="text-gray-600 ml-11">
                   12 Riversands Road, Beverly, Sandton, South Africa, 2191
                 </p>
-                <div className="flex items-center mt-3 ml-11">
-                  <FiPhone className="mr-2 text-gray-400" />
-                  <span className="text-gray-600">+27 10 786 0259</span>
-                </div>
-                <div className="flex items-center mt-3 ml-11">
-                  <FiPhone className="mr-2 text-gray-400" />
-                  <span className="text-gray-600">+27 010 226 9343</span>
+                <div className="flex flex-col md:flex-row">
+                  <div className="flex items-center mt-3 ml-11">
+                    <FiPhone className="mr-2 text-gray-400" />
+                    <span className="text-gray-600">+27 10 786 0259</span>
+                  </div>
+                  <div className="flex items-center mt-3 ml-11">
+                    <FiPhone className="mr-2 text-gray-400" />
+                    <span className="text-gray-600">+27 010 226 9343</span>
+                  </div>
                 </div>
               </div>
             </div>
