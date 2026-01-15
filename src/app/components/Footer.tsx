@@ -183,7 +183,7 @@ function Footer() {
               {/* Social Media Icons */}
               <div className="flex items-center gap-4 mt-5">
                 <a
-                  href="https://www.linkedin.com/company/Sharetekgroup"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -194,7 +194,7 @@ function Footer() {
                   />
                 </a>
                 <a
-                  href="https://x.com/Sharetekgroup"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -205,7 +205,7 @@ function Footer() {
                   />
                 </a>
                 <a
-                  href="https://www.facebook.com/Sharetekgroup"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook"
@@ -216,7 +216,7 @@ function Footer() {
                   />
                 </a>
                 <a
-                  href="https://www.instagram.com/sharetek"
+                  href="/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"
