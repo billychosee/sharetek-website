@@ -1,10 +1,23 @@
 // app/industries/fintech/page.tsx
 
 import { Metadata } from "next";
-import Script from 'next/script';
+import Script from "next/script";
 import { ImageTextIconListSection } from "@/app/components/ImageTextIconListSection";
 import { ImageTextIconListSectionReverse } from "@/app/components/ImageTextIconListSectionReverse";
-import { Shield, Smartphone, Zap, CreditCard, BarChart, Globe, Lock, Cpu, Server, Database, Code, Scale } from "lucide-react";
+import {
+  Shield,
+  Smartphone,
+  Zap,
+  CreditCard,
+  BarChart,
+  Globe,
+  Lock,
+  Cpu,
+  Server,
+  Database,
+  Code,
+  Scale,
+} from "lucide-react";
 import { ImageLeftAccordionRight } from "@/app/components/ImageLeftAccordionRight";
 import Footer from "@/app/components/Footer";
 import FeatureCard from "@/app/components/FeatureCard";
@@ -13,11 +26,14 @@ import FlipCard from "@/app/components/FlipCard";
 
 export const metadata: Metadata = {
   title: "Fintech Innovation in Zimbabwe & Africa | Sharetek Group",
-  description: "Empowering financial institutions and businesses with secure, scalable fintech solutions. Digital payments, mobile money, and compliant financial technology for Africa's growth.",
-  keywords: "fintech Zimbabwe, digital finance solutions, mobile payments Africa, financial technology, banking software, payment processing, fintech APIs, financial inclusion, QR payments, compliant fintech",
+  description:
+    "Empowering financial institutions and businesses with secure, scalable fintech solutions. Digital payments, mobile money, and compliant financial technology for Africa's growth.",
+  keywords:
+    "fintech Zimbabwe, digital finance solutions, mobile payments Africa, financial technology, banking software, payment processing, fintech APIs, financial inclusion, QR payments, compliant fintech",
   openGraph: {
     title: "Fintech Innovation in Zimbabwe & Africa | Sharetek Group",
-    description: "Revolutionizing financial services with secure digital payment solutions and custom fintech platforms for African markets.",
+    description:
+      "Revolutionizing financial services with secure digital payment solutions and custom fintech platforms for African markets.",
     url: "https://sharetek.co.za/industries/fintech",
     type: "website",
   },
@@ -27,78 +43,85 @@ export default function FinTech() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "serviceType": "Fintech Solutions",
-    "provider": {
+    serviceType: "Fintech Solutions",
+    provider: {
       "@type": "Organization",
-      "name": "Sharetek Group",
-      "url": "https://sharetek.co.za",
-      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
+      name: "Sharetek Group",
+      url: "https://sharetek.co.za",
+      logo: "https://sharetek.co.za/Sharetek_logo.svg",
     },
-    "description": "Innovative fintech solutions including digital payments, mobile money platforms, banking software, and financial APIs tailored for African markets.",
-    "areaServed": {
+    description:
+      "Innovative fintech solutions including digital payments, mobile money platforms, banking software, and financial APIs tailored for African markets.",
+    areaServed: {
       "@type": "Country",
-      "name": ["ZW", "ZA", "NG", "KE"]
+      name: ["ZW", "ZA", "NG", "KE"],
     },
-    "hasOfferCatalog": {
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
-      "name": "Fintech Services",
-      "itemListElement": [
+      name: "Fintech Services",
+      itemListElement: [
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Digital Payment Solutions",
-            "description": "Secure and scalable payment processing systems"
-          }
+            name: "Digital Payment Solutions",
+            description: "Secure and scalable payment processing systems",
+          },
         },
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Mobile Money Platforms",
-            "description": "Custom mobile wallet and money transfer solutions"
-          }
+            name: "Mobile Money Platforms",
+            description: "Custom mobile wallet and money transfer solutions",
+          },
         },
         {
           "@type": "Service",
-          "name": "Banking Software",
-          "description": "Core banking systems and financial management tools"
-        }
-      ]
-    }
+          name: "Banking Software",
+          description: "Core banking systems and financial management tools",
+        },
+      ],
+    },
   };
 
   const coreSolutions = [
     {
       icon: CreditCard,
       title: "Payment Technologies",
-      description: "Secure payment gateways, mobile wallets, QR payments, and cross-border remittance platforms."
+      description:
+        "Secure payment gateways, mobile wallets, QR payments, and cross-border remittance platforms.",
     },
     {
       icon: Database,
       title: "Digital Banking",
-      description: "Core banking integration, mobile banking apps, USSD banking, and agent banking systems."
+      description:
+        "Core banking integration, mobile banking apps, USSD banking, and agent banking systems.",
     },
     {
       icon: Scale,
       title: "Lending Solutions",
-      description: "Digital lending platforms, credit scoring engines, and microfinance systems."
+      description:
+        "Digital lending platforms, credit scoring engines, and microfinance systems.",
     },
     {
       icon: BarChart,
       title: "Wealth Management",
-      description: "Portfolio management systems, trading platforms, and automated reporting tools."
+      description:
+        "Portfolio management systems, trading platforms, and automated reporting tools.",
     },
     {
       icon: Lock,
       title: "Security & Compliance",
-      description: "Fraud detection, KYC/AML automation, and regulatory reporting engines."
+      description:
+        "Fraud detection, KYC/AML automation, and regulatory reporting engines.",
     },
     {
       icon: Cpu,
       title: "Custom Fintech",
-      description: "Bespoke financial software, blockchain integrations, and insurance tech platforms."
-    }
+      description:
+        "Bespoke financial software, blockchain integrations, and insurance tech platforms.",
+    },
   ];
 
   const useCases = [
@@ -106,15 +129,16 @@ export default function FinTech() {
       title: "Smatpay",
       imageSrc: "/smatpay-usecase.jpg",
       infoHeading: "Revolutionizing Digital Payments",
-      infoDescription: "Smatpay is our secure, comprehensive payment solution that enables businesses to accept payments via various channels, including POS terminals, QR codes, and online gateways. It's built for speed, security, and scalability in the African market.",
-      ctaLink: "/products/smat-pay"
+      infoDescription:
+        "Smatpay is our secure, comprehensive payment solution that enables businesses to accept payments via various channels, including POS terminals, QR codes, and online gateways. It's built for speed, security, and scalability in the African market.",
+      ctaLink: "/products/smat-pay",
     },
     // {
     //   title: "Digital Lending & Microfinance",
     //   imageSrc: "/lending.jpg",
     //   infoHeading: "Digital-First Lending Solutions",
     //   infoDescription: "A seamless platform for institutions to offer digital loans. Features include automated credit scoring, a secure application process, and efficient disbursement to drive financial inclusion.",
-    //   ctaLink: "/" 
+    //   ctaLink: "/"
     // },
     // {
     //   title: "Compliant Banking & RegTech",
@@ -135,12 +159,15 @@ export default function FinTech() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center px-4 space-y-6 text-center">
-        <p className="text-sm font-bold text-[#64AC6F] pt-20 md:pt-0">FINANCIAL TECHNOLOGY</p>
+        <p className="text-sm font-bold text-[#27282C] pt-20 md:pt-0">
+          FINANCIAL TECHNOLOGY
+        </p>
         <h1 className="text-[#A00927] text-3xl xl:text-4xl font-bold lg:text-4xl">
           Revolutionizing Fintech in Zimbabwe & Africa
         </h1>
         <p className="max-w-2xl mx-auto text-lg">
-          Empowering financial institutions and businesses with secure, scalable, and compliant digital finance solutions.
+          Empowering financial institutions and businesses with secure,
+          scalable, and compliant digital finance solutions.
         </p>
       </section>
 
@@ -157,8 +184,6 @@ export default function FinTech() {
           ))}
         </div>
       </section>
-
-      
 
       {/* Payment Solutions */}
       <ImageTextIconListSectionReverse
@@ -181,7 +206,7 @@ export default function FinTech() {
             icon: <Globe className="w-8 h-8" />,
             title: "Cross-Border Payments",
             text: "Efficient international money transfer platforms",
-          }
+          },
         ]}
       />
 
@@ -206,7 +231,7 @@ export default function FinTech() {
             icon: <Code className="w-8 h-8" />,
             title: "Open Banking APIs",
             text: "Secure connectivity with third-party financial services",
-          }
+          },
         ]}
       />
 
@@ -243,20 +268,25 @@ export default function FinTech() {
           items={[
             {
               question: "What makes your fintech solutions unique for Africa?",
-              answer: "We combine global fintech standards with deep local market understanding, supporting diverse payment methods, multiple currencies, and regulatory requirements specific to African markets."
+              answer:
+                "We combine global fintech standards with deep local market understanding, supporting diverse payment methods, multiple currencies, and regulatory requirements specific to African markets.",
             },
             {
               question: "How do you ensure compliance with RBZ regulations?",
-              answer: "Our team stays current with all RBZ guidelines and builds compliance into our solutions from the ground up, including fiscalization requirements and reporting standards."
+              answer:
+                "Our team stays current with all RBZ guidelines and builds compliance into our solutions from the ground up, including fiscalization requirements and reporting standards.",
             },
             {
-              question: "Can you integrate with mobile money platforms like EcoCash?",
-              answer: "Yes, we have extensive experience integrating with all major mobile money providers in Zimbabwe and across Africa."
+              question:
+                "Can you integrate with mobile money platforms like EcoCash?",
+              answer:
+                "Yes, we have extensive experience integrating with all major mobile money providers in Zimbabwe and across Africa.",
             },
             {
               question: "Do you provide ongoing support after implementation?",
-              answer: "We offer tiered SLA-based support packages to ensure your fintech systems remain operational, secure, and up-to-date."
-            }
+              answer:
+                "We offer tiered SLA-based support packages to ensure your fintech systems remain operational, secure, and up-to-date.",
+            },
           ]}
         />
       </section>
@@ -267,11 +297,11 @@ export default function FinTech() {
         description="Partner with Sharetek Group to develop secure, compliant fintech solutions tailored for your business needs."
         primaryButton={{
           text: "Request a Consultation",
-          url: "/contact-us"
+          url: "/contact-us",
         }}
         secondaryButton={{
           text: "Explore Fintech Solutions",
-          url: "/solutions/fintech"
+          url: "/solutions/fintech",
         }}
       />
 
@@ -279,6 +309,3 @@ export default function FinTech() {
     </div>
   );
 }
-
-
-

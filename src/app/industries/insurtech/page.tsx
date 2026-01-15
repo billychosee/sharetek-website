@@ -1,10 +1,31 @@
 // app/insuretech/page.tsx
 import { Metadata } from "next";
-import Script from 'next/script';
+import Script from "next/script";
 import { ImageTextIconListSection } from "@/app/components/ImageTextIconListSection";
 import { ImageTextIconListSectionReverse } from "@/app/components/ImageTextIconListSectionReverse";
 import {
-  Shield, Smartphone, Zap, CreditCard, BarChart, Globe, Lock, Cpu, Server, Database, Code, Scale, MessageSquare, Briefcase, FileText, Repeat, Layers, Search, DollarSign, Lightbulb, UserCheck, Link
+  Shield,
+  Smartphone,
+  Zap,
+  CreditCard,
+  BarChart,
+  Globe,
+  Lock,
+  Cpu,
+  Server,
+  Database,
+  Code,
+  Scale,
+  MessageSquare,
+  Briefcase,
+  FileText,
+  Repeat,
+  Layers,
+  Search,
+  DollarSign,
+  Lightbulb,
+  UserCheck,
+  Link,
 } from "lucide-react";
 import { ImageLeftAccordionRight } from "@/app/components/ImageLeftAccordionRight";
 import Footer from "@/app/components/Footer";
@@ -15,11 +36,14 @@ import { ImageTextListSectionReverse } from "@/app/components/ImageTextListSecti
 
 export const metadata: Metadata = {
   title: "Insurtech Solutions | Sharetek Group",
-  description: "Cutting-edge insurtech solutions for insurers, brokers, and reinsurers in Zimbabwe & Africa. Modernize operations, reduce risk, and scale confidently.",
-  keywords: "insurtech Zimbabwe, digital insurance Africa, policy management system, reinsurance automation, embedded insurance, microinsurance, AI in insurance",
+  description:
+    "Cutting-edge insurtech solutions for insurers, brokers, and reinsurers in Zimbabwe & Africa. Modernize operations, reduce risk, and scale confidently.",
+  keywords:
+    "insurtech Zimbabwe, digital insurance Africa, policy management system, reinsurance automation, embedded insurance, microinsurance, AI in insurance",
   openGraph: {
     title: "Insurtech Solutions | Sharetek Group",
-    description: "Enabling the digital transformation of the insurance sector with secure, intelligent, and compliant insurtech platforms.",
+    description:
+      "Enabling the digital transformation of the insurance sector with secure, intelligent, and compliant insurtech platforms.",
     url: "https://sharetek.co.za/industries/insuretech",
     type: "website",
   },
@@ -29,159 +53,183 @@ export default function Insuretech() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "Insurtech Technology Solutions",
-    "provider": {
+    serviceType: "Insurtech Technology Solutions",
+    provider: {
       "@type": "Organization",
-      "name": "Sharetek Group",
-      "url": "https://sharetek.co.za",
-      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
+      name: "Sharetek Group",
+      url: "https://sharetek.co.za",
+      logo: "https://sharetek.co.za/Sharetek_logo.svg",
     },
-    "description": "Custom insurtech solutions for digital policy management, risk externalization, reinsurance automation, and embedded insurance.",
-    "areaServed": {
+    description:
+      "Custom insurtech solutions for digital policy management, risk externalization, reinsurance automation, and embedded insurance.",
+    areaServed: {
       "@type": "Country",
-      "name": ["ZW", "ZA", "NG", "KE"]
+      name: ["ZW", "ZA", "NG", "KE"],
     },
-    "hasOfferCatalog": {
+    hasOfferCatalog: {
       "@type": "OfferCatalog",
-      "name": "Insurtech Capabilities",
-      "itemListElement": [
+      name: "Insurtech Capabilities",
+      itemListElement: [
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Policy & Claims Management Systems",
-            "description": "Automate end-to-end policy lifecycle, underwriting, renewals, and claims."
-          }
+            name: "Policy & Claims Management Systems",
+            description:
+              "Automate end-to-end policy lifecycle, underwriting, renewals, and claims.",
+          },
         },
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Reinsurance Platforms & Risk Externalisation",
-            "description": "Automate reinsurance workflows with digital treaty and facultative contract management."
-          }
+            name: "Reinsurance Platforms & Risk Externalisation",
+            description:
+              "Automate reinsurance workflows with digital treaty and facultative contract management.",
+          },
         },
         {
           "@type": "Offer",
-          "itemOffered": {
+          itemOffered: {
             "@type": "Service",
-            "name": "Embedded Insurance & Partner Integration APIs",
-            "description": "Enable insurance sales across digital platforms with flexible APIs."
-          }
-        }
-      ]
-    }
+            name: "Embedded Insurance & Partner Integration APIs",
+            description:
+              "Enable insurance sales across digital platforms with flexible APIs.",
+          },
+        },
+      ],
+    },
   };
 
   const insuretechCapabilities = [
     {
       icon: Code,
       title: "Digitize Policy Onboarding & Sales",
-      description: "Streamline customer acquisition with digital KYC and automated underwriting rules."
+      description:
+        "Streamline customer acquisition with digital KYC and automated underwriting rules.",
     },
     {
       icon: Zap,
       title: "Automate Claims Processing",
-      description: "Accelerate claim resolution with real-time validation and documentation uploads."
+      description:
+        "Accelerate claim resolution with real-time validation and documentation uploads.",
     },
     {
       icon: Repeat,
       title: "Externalize Risk",
-      description: "Optimize risk management through automated reinsurance mechanisms."
+      description:
+        "Optimize risk management through automated reinsurance mechanisms.",
     },
     {
       icon: Link,
       title: "Enable Embedded Insurance",
-      description: "Offer insurance seamlessly within other digital platforms via flexible APIs."
+      description:
+        "Offer insurance seamlessly within other digital platforms via flexible APIs.",
     },
     {
       icon: Scale,
       title: "Integrate with Regulatory Frameworks",
-      description: "Ensure compliance with IPEC and regional guidelines through automated reporting."
+      description:
+        "Ensure compliance with IPEC and regional guidelines through automated reporting.",
     },
     {
       icon: BarChart,
       title: "Analyze Risk with Data",
-      description: "Leverage actuarial and behavioral data for intelligent underwriting decisions."
-    }
+      description:
+        "Leverage actuarial and behavioral data for intelligent underwriting decisions.",
+    },
   ];
 
   const whoWeServeClients = [
     {
       title: "Insurers & Underwriters",
-      description: "Digitize core operations, launch new digital offerings, and enhance customer experience."
+      description:
+        "Digitize core operations, launch new digital offerings, and enhance customer experience.",
     },
     {
       title: "Reinsurers & Risk Managers",
-      description: "Automate treaties, claims recoveries, and optimize risk pooling across portfolios."
+      description:
+        "Automate treaties, claims recoveries, and optimize risk pooling across portfolios.",
     },
     {
       title: "Brokers & Agents",
-      description: "Streamline lead management, commission tracking, and provide superior client support."
+      description:
+        "Streamline lead management, commission tracking, and provide superior client support.",
     },
     {
       title: "Startups & Aggregators",
-      description: "Rapidly deploy new insurance apps, embedded models, and innovative product lines."
+      description:
+        "Rapidly deploy new insurance apps, embedded models, and innovative product lines.",
     },
     {
       title: "Agri-Techs & NGOs",
-      description: "Implement accessible microinsurance and index-based solutions for rural communities."
+      description:
+        "Implement accessible microinsurance and index-based solutions for rural communities.",
     },
     {
       title: "Regulators & Public Sector",
-      description: "Develop RegTech integrations and robust compliance systems for market oversight."
-    }
+      description:
+        "Develop RegTech integrations and robust compliance systems for market oversight.",
+    },
   ];
 
   const faqItems = [
     {
       question: "How does Sharetek's insurtech work for microinsurance?",
-      answer: "We support USSD, mobile money premiums, and weather-indexed agriculture insurance for low-income markets, making insurance accessible to a broader population."
+      answer:
+        "We support USSD, mobile money premiums, and weather-indexed agriculture insurance for low-income markets, making insurance accessible to a broader population.",
     },
     {
       question: "Is your platform compliant with IPEC?",
-      answer: "Yes! Our solutions include automated IPEC reporting, ZIMRA EFD integration, and GDPR-aligned data privacy measures to ensure full regulatory compliance."
+      answer:
+        "Yes! Our solutions include automated IPEC reporting, ZIMRA EFD integration, and GDPR-aligned data privacy measures to ensure full regulatory compliance.",
     },
     {
       question: "Can we integrate with existing core systems?",
-      answer: "Absolutely. Our modular APIs are designed for seamless integration with a wide range of legacy systems, minimizing disruption and maximizing compatibility."
+      answer:
+        "Absolutely. Our modular APIs are designed for seamless integration with a wide range of legacy systems, minimizing disruption and maximizing compatibility.",
     },
     {
-      question: "What makes Sharetek Group a trusted insurtech partner in Africa?",
-      answer: "Our deep understanding of local regulations, unique market challenges, and our commitment to building solutions tailored for African contexts, combined with dedicated local support, sets us apart."
-    }
+      question:
+        "What makes Sharetek Group a trusted insurtech partner in Africa?",
+      answer:
+        "Our deep understanding of local regulations, unique market challenges, and our commitment to building solutions tailored for African contexts, combined with dedicated local support, sets us apart.",
+    },
   ];
 
   const ctaProps = {
     heading: "Ready to Transform Your Insurance Business?",
-    description: "Partner with Sharetek to build smart, scalable, and future-ready insurtech systems.",
+    description:
+      "Partner with Sharetek to build smart, scalable, and future-ready insurtech systems.",
     primaryButton: {
       text: "Book a Free Insurtech Consultation",
-      url: "/contact-us"
+      url: "/contact-us",
     },
     secondaryButton: {
       text: "Request a Reinsurance Platform Demo",
-      url: "/contact-us"
-    }
+      url: "/contact-us",
+    },
   };
 
   const introductionSectionProps = {
     heading: "The Insurance Sector at a Crossroads in Africa",
-    paragraph: "Insurance in Zimbabwe and Africa is shifting rapidly. As regulatory demands increase and customer expectations evolve, traditional insurers, brokers, and underwriters face pressure to digitize, automate, and externalize risk more effectively.",
-    imageSrc: "/african_insurance_crossroads.jpg", 
+    paragraph:
+      "Insurance in Zimbabwe and Africa is shifting rapidly. As regulatory demands increase and customer expectations evolve, traditional insurers, brokers, and underwriters face pressure to digitize, automate, and externalize risk more effectively.",
+    imageSrc: "/african_insurance_crossroads.jpg",
     imageAlt: "Digital transformation of insurance in Africa",
     listItems: [
       "Digitize core operations for efficiency.",
       "Automate key processes like claims and underwriting.",
       "Effectively externalize and manage risk.",
       "Meet evolving customer expectations with modern solutions.",
-      "Comply with increasing regulatory demands across the continent."
-    ]
+      "Comply with increasing regulatory demands across the continent.",
+    ],
   };
 
   const whyPartnerSharetekProps = {
     heading: "Why Partner with Sharetek for Insuretech?",
-    paragraph: "At Sharetek Group, we build next-generation Insuretech platforms tailored for Africa's unique challenges. We provide the tools, APIs, and support to help you transform your insurance business by focusing on key areas:",
+    paragraph:
+      "At Sharetek Group, we build next-generation Insuretech platforms tailored for Africa's unique challenges. We provide the tools, APIs, and support to help you transform your insurance business by focusing on key areas:",
     imageSrc: "/Sharetek_partnership_benefits.jpg",
     imageAlt: "Benefits of partnering with Sharetek for Insuretech",
     listItems: [
@@ -190,18 +238,20 @@ export default function Insuretech() {
       "Modular architecture allowing you to pick only what you need: APIs, portals, engines, or the full platform.",
       "Solutions built for Africa, supporting offline access, mobile money payments, USSD, and local languages.",
       "Ensuring local and global compliance with IPEC, RBZ, and international solvency standards.",
-      "Dedicated local support from our Zimbabwe-based team, from implementation to post-launch."
-    ]
+      "Dedicated local support from our Zimbabwe-based team, from implementation to post-launch.",
+    ],
   };
 
   const whoWeServeProps = {
     heading: "Who We Serve Across the Insurance Ecosystem",
-    paragraph: "Sharetek Group's Insuretech solutions empower a diverse range of stakeholders across the insurance ecosystem, addressing their unique needs:",
-    imageSrc: "/insurtech_who_we_serve.jpg", 
+    paragraph:
+      "Sharetek Group's Insuretech solutions empower a diverse range of stakeholders across the insurance ecosystem, addressing their unique needs:",
+    imageSrc: "/insurtech_who_we_serve.jpg",
     imageAlt: "Diverse stakeholders in the insurance industry",
-    listItems: whoWeServeClients.map(client => `${client.title}: ${client.description}`)
+    listItems: whoWeServeClients.map(
+      (client) => `${client.title}: ${client.description}`
+    ),
   };
-
 
   return (
     <div className="pt-10 text-black bg-white md:pt-24">
@@ -213,12 +263,15 @@ export default function Insuretech() {
 
       {/* Hero Section */}
       <section className="flex flex-col items-center px-4 space-y-6 text-center">
-        <p className="text-sm font-bold text-[#64AC6F] pt-20 md:pt-0">FINANCIAL TECHNOLOGY</p>
+        <p className="text-sm font-bold text-[#27282C] pt-20 md:pt-0">
+          INSURANCE TECHNOLOGY
+        </p>
         <h1 className="text-[#A00927] text-3xl xl:text-4xl font-bold lg:text-4xl">
-          Revolutionizing Fintech in Zimbabwe & Africa
+          Revolutionizing Insurtech in Zimbabwe & Africa
         </h1>
         <p className="max-w-2xl mx-auto text-lg">
-          Empowering financial institutions and businesses with secure, scalable, and compliant digital finance solutions.
+          Empowering financial institutions and businesses with secure,
+          scalable, and compliant digital finance solutions.
         </p>
       </section>
 
@@ -248,7 +301,10 @@ export default function Insuretech() {
             Sharetek Group's Insuretech Capabilities
           </h2>
           <p className="max-w-3xl mx-auto text-gray-700">
-            We offer a full-stack suite of modern insurance technologies tailored for the African and global insurance value chain. From front-end sales to complex back-office and regulatory integration, we help you:
+            We offer a full-stack suite of modern insurance technologies
+            tailored for the African and global insurance value chain. From
+            front-end sales to complex back-office and regulatory integration,
+            we help you:
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -275,23 +331,23 @@ export default function Insuretech() {
           {
             icon: <FileText className="w-8 h-8" />,
             title: "Digital Policy Issuance & Onboarding",
-            text: "Streamline KYC and underwriting rules for quick policy issuance."
+            text: "Streamline KYC and underwriting rules for quick policy issuance.",
           },
           {
             icon: <Zap className="w-8 h-8" />,
             title: "Claims Automation",
-            text: "Enable documentation uploads and verification for faster claim processing."
+            text: "Enable documentation uploads and verification for faster claim processing.",
           },
           {
             icon: <MessageSquare className="w-8 h-8" />,
             title: "Notifications & Portals",
-            text: "SMS, Email, WhatsApp notifications and dedicated broker/agent portals."
+            text: "SMS, Email, WhatsApp notifications and dedicated broker/agent portals.",
           },
           {
             icon: <Briefcase className="w-8 h-8" />,
             title: "Multi-Product Support",
-            text: "Handle various insurance products: Life, Health, Motor, Agriculture, Funeral."
-          }
+            text: "Handle various insurance products: Life, Health, Motor, Agriculture, Funeral.",
+          },
         ]}
       />
 
@@ -307,23 +363,23 @@ export default function Insuretech() {
           {
             icon: <Layers className="w-8 h-8" />,
             title: "Treaty & Facultative Management",
-            text: "Capture terms, cessions, limits, and automate calculations."
+            text: "Capture terms, cessions, limits, and automate calculations.",
           },
           {
             icon: <DollarSign className="w-8 h-8" />,
             title: "Premium Cession & Recoveries",
-            text: "Automate premium cession calculations and claims recoveries workflows."
+            text: "Automate premium cession calculations and claims recoveries workflows.",
           },
           {
             icon: <Globe className="w-8 h-8" />,
             title: "Multi-layered Risk Pooling",
-            text: "Tools for risk diversification and compliant cross-border externalization."
+            text: "Tools for risk diversification and compliant cross-border externalization.",
           },
           {
             icon: <Repeat className="w-8 h-8" />,
             title: "Retrocession Automation",
-            text: "Efficiently manage retrocession processes for comprehensive risk transfer."
-          }
+            text: "Efficiently manage retrocession processes for comprehensive risk transfer.",
+          },
         ]}
       />
 
@@ -339,23 +395,23 @@ export default function Insuretech() {
           {
             icon: <Code className="w-8 h-8" />,
             title: "Quote & Bind APIs",
-            text: "APIs for seamless product comparison and purchasing within partner platforms."
+            text: "APIs for seamless product comparison and purchasing within partner platforms.",
           },
           {
             icon: <Smartphone className="w-8 h-8" />,
             title: "Claims Submission APIs",
-            text: "Facilitate direct claims submission from any integrated application."
+            text: "Facilitate direct claims submission from any integrated application.",
           },
           {
             icon: <CreditCard className="w-8 h-8" />,
             title: "API Monetization Gateway",
-            text: "Secure gateway for managing and monetizing embedded product partnerships."
+            text: "Secure gateway for managing and monetizing embedded product partnerships.",
           },
           {
             icon: <Link className="w-8 h-8" />,
             title: "Retail & Telco Integration",
-            text: "Seamless integration with retail, banking, telco & remittance partners."
-          }
+            text: "Seamless integration with retail, banking, telco & remittance partners.",
+          },
         ]}
       />
 
@@ -367,14 +423,13 @@ export default function Insuretech() {
         description="Helping insurers, brokers, and reinsurers digitize workflows, reduce risk, and scale with secure, intelligent platforms tailored for Zimbabwe and Africa."
         primaryButton={{
           text: "Book a Free Insurtech Consultation",
-          url: "/contact-us"
+          url: "/contact-us",
         }}
         secondaryButton={{
           text: "Request a Reinsurance Platform Demo",
-          url: "/contact-us"
+          url: "/contact-us",
         }}
       />
-
 
       {/* 4. Insurance Analytics & Underwriting Intelligence */}
       <ImageTextIconListSection
@@ -386,23 +441,23 @@ export default function Insuretech() {
           {
             icon: <BarChart className="w-8 h-8" />,
             title: "Actuarial Modeling",
-            text: "Analyze loss ratios, reserves, and claims experience for better insights."
+            text: "Analyze loss ratios, reserves, and claims experience for better insights.",
           },
           {
             icon: <Search className="w-8 h-8" />,
             title: "Predictive Risk Scoring & Fraud Detection",
-            text: "Utilize behavioral analytics for accurate risk assessment and fraud prevention."
+            text: "Utilize behavioral analytics for accurate risk assessment and fraud prevention.",
           },
           {
             icon: <Cpu className="w-8 h-8" />,
             title: "Customer Lifetime Value",
-            text: "Predict customer lifetime value and optimize claims cost estimation."
+            text: "Predict customer lifetime value and optimize claims cost estimation.",
           },
           {
             icon: <Lightbulb className="w-8 h-8" />,
             title: "Claims Cost Estimation",
-            text: "Algorithms to accurately estimate claims costs, aiding financial planning."
-          }
+            text: "Algorithms to accurately estimate claims costs, aiding financial planning.",
+          },
         ]}
       />
 
@@ -418,23 +473,23 @@ export default function Insuretech() {
           {
             icon: <CreditCard className="w-8 h-8" />,
             title: "Mobile Money Premium Collection",
-            text: "Enable easy premium payments via popular mobile money platforms."
+            text: "Enable easy premium payments via popular mobile money platforms.",
           },
           {
             icon: <Smartphone className="w-8 h-8" />,
             title: "USSD-enabled Microinsurance",
-            text: "Reach underserved populations with accessible USSD platforms."
+            text: "Reach underserved populations with accessible USSD platforms.",
           },
           {
             icon: <Globe className="w-8 h-8" />,
             title: "Index-based & Group Insurance",
-            text: "Modules for crop/weather index-based insurance and community underwriting models."
+            text: "Modules for crop/weather index-based insurance and community underwriting models.",
           },
           {
             icon: <Search className="w-8 h-8" />,
             title: "Geo-spatial Agri-Risk Analytics",
-            text: "Leverage geo-spatial data for agri-risk and drought/flood coverage."
-          }
+            text: "Leverage geo-spatial data for agri-risk and drought/flood coverage.",
+          },
         ]}
       />
 
@@ -450,23 +505,23 @@ export default function Insuretech() {
           {
             icon: <Shield className="w-8 h-8" />,
             title: "IPEC-compliant Reporting",
-            text: "Automated engines for generation of regulatory reports."
+            text: "Automated engines for generation of regulatory reports.",
           },
           {
             icon: <Scale className="w-8 h-8" />,
             title: "ZIMRA & Fiscalization",
-            text: "Integration with ZIMRA for VAT, transaction audits, and automated fiscalization."
+            text: "Integration with ZIMRA for VAT, transaction audits, and automated fiscalization.",
           },
           {
             icon: <Lock className="w-8 h-8" />,
             title: "Data Privacy Compliance",
-            text: "Adherence to GDPR principles with policyholder data privacy and masking."
+            text: "Adherence to GDPR principles with policyholder data privacy and masking.",
           },
           {
             icon: <Database className="w-8 h-8" />,
             title: "Risk Retention Tracking",
-            text: "Tools for monitoring risk retention versus reinsurance coverage."
-          }
+            text: "Tools for monitoring risk retention versus reinsurance coverage.",
+          },
         ]}
       />
 
@@ -482,23 +537,23 @@ export default function Insuretech() {
           {
             icon: <Lightbulb className="w-8 h-8" />,
             title: "AI-powered Chatbots",
-            text: "Intelligent chatbots for enhanced policy servicing and customer support."
+            text: "Intelligent chatbots for enhanced policy servicing and customer support.",
           },
           {
             icon: <Cpu className="w-8 h-8" />,
             title: "Smart Claim Approval Engines",
-            text: "Automated and intelligent systems for quicker claims validation and approval."
+            text: "Automated and intelligent systems for quicker claims validation and approval.",
           },
           {
             icon: <UserCheck className="w-8 h-8" />,
             title: "Facial Recognition & Fraud Detection",
-            text: "Leverage AI for life verification and behavioral fraud detection during underwriting."
+            text: "Leverage AI for life verification and behavioral fraud detection during underwriting.",
           },
           {
             icon: <MessageSquare className="w-8 h-8" />,
             title: "Auto-categorization of Incidents",
-            text: "Automatically categorize incidents and claims for efficient processing."
-          }
+            text: "Automatically categorize incidents and claims for efficient processing.",
+          },
         ]}
       />
 
@@ -514,23 +569,23 @@ export default function Insuretech() {
           {
             icon: <Server className="w-8 h-8" />,
             title: "Admin Dashboard",
-            text: "Full configuration control and comprehensive management features."
+            text: "Full configuration control and comprehensive management features.",
           },
           {
             icon: <Smartphone className="w-8 h-8" />,
             title: "Branded Web & Mobile Apps",
-            text: "Deliver a seamless, branded experience for policyholders, agents, and brokers."
+            text: "Deliver a seamless, branded experience for policyholders, agents, and brokers.",
           },
           {
             icon: <MessageSquare className="w-8 h-8" />,
             title: "Built-in Marketing & Nurturing",
-            text: "Integrated tools for SMS, lead nurturing, and marketing campaigns."
+            text: "Integrated tools for SMS, lead nurturing, and marketing campaigns.",
           },
           {
             icon: <Globe className="w-8 h-8" />,
             title: "Multi-language, Multi-currency",
-            text: "Support for diverse markets with multi-language and multi-currency capabilities."
-          }
+            text: "Support for diverse markets with multi-language and multi-currency capabilities.",
+          },
         ]}
       />
 
@@ -569,6 +624,3 @@ export default function Insuretech() {
     </div>
   );
 }
-
-
-
