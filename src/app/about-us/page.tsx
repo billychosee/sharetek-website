@@ -326,87 +326,6 @@ export default function AboutUs() {
         ))}
       </section>
 
-      <section className="relative flex flex-col-reverse gap-5 py-20 mx-5 text-black md:flex-row md:mx-24">
-        {/* Map with flickering Zimbabwe marker */}
-        <div className="relative md:w-1/2">
-          <img
-            src="/world-map-grid-background.png"
-            alt="world map"
-            width={800}
-            height={600}
-            className="object-cover w-full h-full"
-          />
-
-          {/* Flickering Zimbabwe Marker (Clickable) */}
-          <a
-            href="https://maps.app.goo.gl/js9L5GThgqoY45gX6"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="absolute"
-            style={{ top: "66%", left: "54%" }} // tweak this for perfect placement
-          >
-            <div className="relative w-4 h-4">
-              {/* Static background circle */}
-              <span className="absolute w-4 h-4 rounded-full bg-[#A00927] opacity-30 top-0 left-0" />
-              {/* Flickering circle */}
-              <span className="absolute w-4 h-4 rounded-full bg-[#27282C] flicker top-0 left-0" />
-            </div>
-          </a>
-        </div>
-
-        {/* Text and Buttons */}
-        <div className="space-y-10 text-center md:w-1/2 md:text-start">
-          <div>
-            <p className="text-sm font-semibold text-[#A00927] whitespace-nowrap">
-              Locations
-            </p>
-            <h1 className="pt-5 text-2xl font-bold">
-              We are growing our presence in the African region.
-            </h1>
-          </div>
-
-          <div className="space-y-3">
-            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
-              <p>
-                <strong>Zimbabwe</strong>: 13 Brentwood Avenue, Harare, Zimbabwe
-              </p>
-            </div>
-            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
-              <p>
-                <strong>South Africa</strong>: 12 Riversands Road, Beverly,
-                Sandton, South Africa, 2191
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center w-full gap-4 md:flex-row">
-            <CustomButton
-              variant="primary"
-              className="!bg-[#27282C] !text-white hover:!bg-black"
-            >
-              Speak to an Expert
-            </CustomButton>
-            <CustomButton variant="link">
-              Learn more about services
-            </CustomButton>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Clients */}
-      <section>
-        <div className="px-4 md:px-20 bg-gradient-to-t from-[#F9FAFB] to-white py-10">
-          <div className="flex items-center my-10">
-            <div className="flex-grow border-t border-gray-400"></div>
-            <span className="mx-4 text-sm font-semibold text-[#A00927] whitespace-nowrap">
-              OUR CLIENTS
-            </span>
-            <div className="flex-grow border-t border-gray-400"></div>
-          </div>
-
-          <LogoSlider logos={logos} />
-        </div>
-      </section>
-
       {/* Our Team Section - Centered Headers & Full Height Profiles */}
       <section className="py-24 bg-white">
         <div className="px-6 mx-auto max-w-7xl md:px-24">
@@ -485,6 +404,87 @@ export default function AboutUs() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="relative flex flex-col-reverse gap-5 py-20 mx-5 text-black md:flex-row md:mx-24">
+        {/* Map with flickering Zimbabwe marker */}
+        <div className="relative md:w-1/2">
+          <img
+            src="/world-map-grid-background.png"
+            alt="world map"
+            width={800}
+            height={600}
+            className="object-cover w-full h-full"
+          />
+
+          {/* Flickering Zimbabwe Marker (Clickable) */}
+          <a
+            href="https://maps.app.goo.gl/js9L5GThgqoY45gX6"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute"
+            style={{ top: "66%", left: "54%" }} // tweak this for perfect placement
+          >
+            <div className="relative w-4 h-4">
+              {/* Static background circle */}
+              <span className="absolute w-4 h-4 rounded-full bg-[#A00927] opacity-30 top-0 left-0" />
+              {/* Flickering circle */}
+              <span className="absolute w-4 h-4 rounded-full bg-[#27282C] flicker top-0 left-0" />
+            </div>
+          </a>
+        </div>
+
+        {/* Text and Buttons */}
+        <div className="space-y-10 text-center md:w-1/2 md:text-start">
+          <div>
+            <p className="text-sm font-semibold text-[#A00927] whitespace-nowrap">
+              Locations
+            </p>
+            <h1 className="pt-5 text-2xl font-bold">
+              We are growing our presence in the African region.
+            </h1>
+          </div>
+
+          <div className="space-y-3">
+            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
+              <p>
+                <strong>Zimbabwe</strong>: 13 Brentwood Avenue, Harare, Zimbabwe
+              </p>
+            </div>
+            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
+              <p>
+                <strong>South Africa</strong>: 12 Riversands Road, Beverly,
+                Sandton, South Africa, 2191
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center w-full gap-4 md:flex-row">
+            <CustomButton
+              variant="primary"
+              className="!bg-[#27282C] !text-white hover:!bg-black"
+            >
+              Speak to an Expert
+            </CustomButton>
+            <CustomButton variant="link">
+              Learn more about services
+            </CustomButton>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Clients */}
+      <section>
+        <div className="px-4 md:px-20 bg-gradient-to-t from-[#F9FAFB] to-white py-10">
+          <div className="flex items-center my-10">
+            <div className="flex-grow border-t border-gray-400"></div>
+            <span className="mx-4 text-sm font-semibold text-[#A00927] whitespace-nowrap">
+              OUR CLIENTS
+            </span>
+            <div className="flex-grow border-t border-gray-400"></div>
+          </div>
+
+          <LogoSlider logos={logos} />
         </div>
       </section>
 
