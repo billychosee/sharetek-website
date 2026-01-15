@@ -100,7 +100,7 @@ const ContactPage = () => {
                   </div>
                   <div className="flex items-center mt-3 ml-11">
                     <FiPhone className="mr-2 text-gray-400" />
-                    <span className="text-gray-600">+27 010 226 9343</span>
+                    <span className="text-gray-600">+27 10 226 9343</span>
                   </div>
                 </div>
               </div>
@@ -135,6 +135,3 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
-
-
-
