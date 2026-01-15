@@ -97,6 +97,10 @@ const ContactPage = () => {
                   <FiPhone className="mr-2 text-gray-400" />
                   <span className="text-gray-600">+27 10 786 0259</span>
                 </div>
+                <div className="flex items-center mt-3 ml-11">
+                  <FiPhone className="mr-2 text-gray-400" />
+                  <span className="text-gray-600">+27 010 226 9343</span>
+                </div>
               </div>
             </div>
           </div>

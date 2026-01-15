@@ -167,6 +167,10 @@ function Footer() {
                 <p>+27 10 786 0259</p>
               </div>
               <div className="flex items-center gap-3">
+                <FiPhone className="text-white" size={20} />
+                <p>+27 010 226 9343</p>
+              </div>
+              <div className="flex items-center gap-3">
                 <FiMail className="text-white" size={20} />
                 <a
                   href="mailto:info@sharetek.co.za"
