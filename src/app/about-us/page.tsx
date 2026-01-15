@@ -426,14 +426,14 @@ export default function AboutUs() {
             {[
               {
                 name: "Khethi Nkosi",
-                role: "CEO",
+                role: "Director",
                 bio: "Has a Diploma in IT, Diploma in Project Management & Marketing. Numerous Leadership certificates, is an NLP (Neuro Linguistic Programming) Master Practitioner. He worked for IBM, Consology, BCX, Attachmate Netiq and then cofounded xTelekom in 2012. Khethi has 20 years ICT industry experience.",
                 image: "/khethi-nkosi.png",
                 btnColor: "bg-[#A00927]",
               },
               {
                 name: "Takudzwa Keith Chimeto",
-                role: "CTO",
+                role: "Director",
                 bio: "Takudzwa Keith Chimeto is an African tech entrepreneur passionate about building systems that enable people to do business digitally and securely. As the founder of Smatpay and other technology platforms, he focuses on fintech, digital media monetization, and scalable infrastructure.",
                 image: "/keith-chimeto.JPG",
                 btnColor: "bg-[#27282C]",
@@ -493,6 +493,3 @@ export default function AboutUs() {
     </section>
   );
 }
-
-
-

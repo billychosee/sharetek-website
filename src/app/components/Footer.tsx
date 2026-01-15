@@ -60,7 +60,7 @@ function Footer() {
       <div
         className="absolute inset-0 z-0 opacity-100 bg-[#020626]"
         style={{
-          backgroundImage: `url('/world_bg.svg')`,
+          backgroundImage: `url('/footer-bg.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
