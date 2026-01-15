@@ -164,7 +164,7 @@ function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <FiPhone className="text-white" size={20} />
-                <p>+263 78 956 6427</p>
+                <p>+27 10 786 0259</p>
               </div>
               <div className="flex items-center gap-3">
                 <FiMail className="text-white" size={20} />
@@ -285,6 +285,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-
