@@ -25,3 +25,6 @@ export default function useScrollHide(mobileMenuOpen: boolean) {
 
   return navbarVisible;
 }
+
+
+

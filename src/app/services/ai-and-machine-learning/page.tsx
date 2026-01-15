@@ -15,8 +15,8 @@ export default function AiAndMachineLearning() {
     "provider": {
       "@type": "Organization",
       "name": "Sharetek Group",
-      "url": "https://Sharetekgroup.com",
-      "logo": "https://Sharetekgroup.com/Sharetek_logo.svg"
+      "url": "https://sharetek.co.za",
+      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
     },
     "description": "Cutting-edge AI and machine learning services including custom model development, predictive analytics, and continuous optimization solutions.",
     "areaServed": {
@@ -55,7 +55,7 @@ export default function AiAndMachineLearning() {
     },
     "potentialAction": {
       "@type": "ContactPoint",
-      "url": "https://Sharetekgroup.com/contact-us",
+      "url": "https://sharetek.co.za/contact-us",
       "contactType": "sales",
       "description": "Contact us for AI solution consulting"
     }
@@ -178,4 +178,7 @@ export default function AiAndMachineLearning() {
     </div>
   );
 }
+
+
+
 

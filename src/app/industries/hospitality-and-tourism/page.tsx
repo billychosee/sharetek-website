@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hospitality & Tourism Tech Solutions | Sharetek Group",
     description: "Empowering the hospitality and tourism industry with custom software, mobile solutions, and data analytics for sustainable growth.",
-    url: "https://Sharetekgroup.com/industries/hospitality-tourism",
+    url: "https://sharetek.co.za/industries/hospitality-tourism",
     type: "website",
   },
 };
@@ -32,8 +32,8 @@ export default function HospitalityTourism() {
     "provider": {
       "@type": "Organization",
       "name": "Sharetek Group",
-      "url": "https://Sharetekgroup.com",
-      "logo": "https://Sharetekgroup.com/Sharetek_logo.svg"
+      "url": "https://sharetek.co.za",
+      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
     },
     "description": "Custom technology solutions for the hospitality and tourism industry, including PMS, digital guest experiences, booking engines, and analytics.",
     "areaServed": {
@@ -510,3 +510,6 @@ const useCases = [
     </div>
   );
 }
+
+
+

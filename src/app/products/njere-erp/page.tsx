@@ -54,9 +54,9 @@ export default function NjereERP() {
     "operatingSystem": "Web-based",
     "description": "Njere ERP is a comprehensive school management software that streamlines all aspects of an educational institution, from administration and student management to e-learning, finance with payment gateways, and multi-campus operations.",
     "brand": { "@type": "Brand", "name": "SmaTech Group" },
-    "url": "https://smatechgroup.com/products/njere-erp",
-    "logo": "https://smatechgroup.com/services_icon.svg",
-    "image": "https://smatechgroup.com/njere_erp.jpg",
+    "url": "https://sharetek.co.za/products/njere-erp",
+    "logo": "https://sharetek.co.za/services_icon.svg",
+    "image": "https://sharetek.co.za/njere_erp.jpg",
     "featureList": [
       "E-learning Management",
       "Faculty and Staff Management",
@@ -273,3 +273,6 @@ export default function NjereERP() {
     </div>
   );
 }
+
+
+

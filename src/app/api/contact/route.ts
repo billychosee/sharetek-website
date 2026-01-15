@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     // Define email options
     const mailOptions = {
       from: `"Sharetek Contact" <noreply@smatpay.africa>`,
-      to: "info@Sharetekgroup.com",
+      to: "info@sharetek.co.za",
       subject: "Sharetek Contact Form",
       text: `
         Name: ${firstName} ${lastName}
@@ -73,3 +73,6 @@ export async function POST(req: Request) {
     );
   }
 }
+
+
+

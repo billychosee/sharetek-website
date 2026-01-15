@@ -287,9 +287,9 @@ export default function SmatAccess() {
         "name": "SmatAccess",
         "description": "SmatAccess is a complete physical access control solution that integrates advanced software with purpose-built devices to manage and monitor all access points, offering enhanced security, real-time monitoring, and scalable access management.",
         "brand": { "@type": "Brand", "name": "SmaTech Group" },
-        "url": "https://smatechgroup.com/products/smataccess",
-        "logo": "https://smatechgroup.com/smataccess_logo.svg",
-        "image": "https://smatechgroup.com/smataccess_hero_image.png",
+        "url": "https://sharetek.co.za/products/smataccess",
+        "logo": "https://sharetek.co.za/smataccess_logo.svg",
+        "image": "https://sharetek.co.za/smataccess_hero_image.png",
         "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "Call for pricing", "availability": "https://schema.org/InStock" },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "170" }
     };
@@ -548,3 +548,6 @@ export default function SmatAccess() {
         </div>
     );
 }
+
+
+

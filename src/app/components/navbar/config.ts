@@ -73,7 +73,7 @@ export const NAV_ITEMS = [
   },
   {
     label: "CAREERS",
-    href: "https://erp.Sharetekgroup.com/recruitment/recruitment_portal",
+    href: "https://erp.sharetek.co.za/recruitment/recruitment_portal",
     icon: FiUsers,
     iconClass: "text-current"
   },
@@ -92,4 +92,7 @@ export const ICONS = {
   chevronDown: FiChevronDown,
   chevronUp: FiChevronUp
 } as const;
+
+
+
 

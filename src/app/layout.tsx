@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/Navbar";
 import CookieConsent from "./components/CookieConsent"; // 👈 add this
-
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  weight: ["400", "700"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Sharetek - Innovative Tech Solutions",
@@ -26,9 +18,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/sharetek_logo.svg" type="image/svg+xml" />
       </head>
-      <body
-        className={`${montserrat.variable} antialiased text-black font-sans`}
-      >
+      <body className="font-sans antialiased text-black">
         <Navbar />
         {children}
 
@@ -37,4 +27,3 @@ export default function RootLayout({
     </html>
   );
 }
-

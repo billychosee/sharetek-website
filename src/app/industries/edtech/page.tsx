@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "EdTech Solutions for Zimbabwe & Africa | Sharetek Group",
     description: "Empowering educational institutions with cutting-edge EdTech solutions tailored for African contexts.",
-    url: "https://Sharetekgroup.com/industries/edtech",
+    url: "https://sharetek.co.za/industries/edtech",
     type: "website",
   },
 };
@@ -27,8 +27,8 @@ export default function EdTech() {
     "@type": "EducationalOrganization",
     "name": "Sharetek Group EdTech Solutions",
     "description": "Comprehensive educational technology solutions for African institutions including LMS platforms, school management systems, and AI-powered educational tools.",
-    "url": "https://Sharetekgroup.com/industries/edtech",
-    "logo": "https://Sharetekgroup.com/Sharetek_logo.svg",
+    "url": "https://sharetek.co.za/industries/edtech",
+    "logo": "https://sharetek.co.za/Sharetek_logo.svg",
     "sameAs": [
       "https://twitter.com/Sharetekgroup",
       "https://linkedin.com/company/Sharetekgroup"
@@ -354,3 +354,6 @@ export default function EdTech() {
     </div>
   );
 }
+
+
+

@@ -12,7 +12,7 @@ export const metadata = {
     title: "Contact Sharetek Group | IT Solutions Experts",
     description:
       "Reach our technology specialists for tailored business solutions.",
-    url: "https://www.Sharetekgroup.com/contact-us",
+    url: "https://www.sharetek.co.za/contact-us",
     siteName: "Sharetek Group",
   },
 };
@@ -129,3 +129,6 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+
+

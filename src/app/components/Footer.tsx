@@ -35,7 +35,7 @@ function Footer() {
       bodyFormData.append("name", "Unknown");
       bodyFormData.append("assigned", "Michelle Muhenyeri");
 
-      const response = await fetch("https://erp.sharetekgroup.com/api/leads", {
+      const response = await fetch("https://erp.sharetek.co.za/api/leads", {
         method: "POST",
         headers: headers,
         body: bodyFormData,
@@ -118,7 +118,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://erp.sharetekgroup.com/recruitment/recruitment_portal"
+                  href="https://crm.sharetek.co.za/"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -143,7 +143,7 @@ function Footer() {
               <a href="/contact-us">
                 <div className="flex items-start gap-3 mb-2 cursor-pointer hover:opacity-80">
                   <img
-                    src="/smatech_t_logo.svg"
+                    src="/chat-icon.svg"
                     alt="Chat icon"
                     width={20}
                     height={20}
@@ -169,10 +169,10 @@ function Footer() {
               <div className="flex items-center gap-3">
                 <FiMail className="text-white" size={20} />
                 <a
-                  href="mailto:info@sharetekgroup.com"
+                  href="mailto:info@sharetek.co.za"
                   className="hover:underline"
                 >
-                  info@sharetekgroup.com
+                  info@sharetek.co.za
                 </a>
               </div>
               <div className="flex items-center gap-3">
@@ -285,3 +285,6 @@ function Footer() {
 }
 
 export default Footer;
+
+
+

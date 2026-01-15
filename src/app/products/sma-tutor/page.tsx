@@ -365,3 +365,6 @@ export default function SmaTutorPage() {
             🚀 Get Started Now
           </a>
 </motion.div> </section> <Footer /> </div> ); }
+
+
+

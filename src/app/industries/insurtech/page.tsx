@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Insurtech Solutions | Sharetek Group",
     description: "Enabling the digital transformation of the insurance sector with secure, intelligent, and compliant insurtech platforms.",
-    url: "https://Sharetekgroup.com/industries/insuretech",
+    url: "https://sharetek.co.za/industries/insuretech",
     type: "website",
   },
 };
@@ -33,8 +33,8 @@ export default function Insuretech() {
     "provider": {
       "@type": "Organization",
       "name": "Sharetek Group",
-      "url": "https://Sharetekgroup.com",
-      "logo": "https://Sharetekgroup.com/Sharetek_logo.svg"
+      "url": "https://sharetek.co.za",
+      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
     },
     "description": "Custom insurtech solutions for digital policy management, risk externalization, reinsurance automation, and embedded insurance.",
     "areaServed": {
@@ -569,3 +569,6 @@ export default function Insuretech() {
     </div>
   );
 }
+
+
+

@@ -54,9 +54,9 @@ export default function SmatPropPage() {
       "@type": "Brand",
       "name": "SmaTech Group"
     },
-    "url": "https://smatechgroup.com/products/smatprop",
-    "logo": "https://smatechgroup.com/services_icon.svg",
-    "image": "https://smatechgroup.com/smat_prop_building.jpg",
+    "url": "https://sharetek.co.za/products/smatprop",
+    "logo": "https://sharetek.co.za/services_icon.svg",
+    "image": "https://sharetek.co.za/smat_prop_building.jpg",
     "featureList": [
       "Tenant Screening & History Checks",
       "Lease Management & Templates",
@@ -433,3 +433,6 @@ export default function SmatPropPage() {
     </div>
   );
 }
+
+
+

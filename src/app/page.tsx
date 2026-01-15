@@ -116,11 +116,11 @@ export default function Home() {
         <meta name="author" content="Sharetek Group" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://www.Sharetekgroup.com/" />
+        <link rel="canonical" href="https://www.sharetek.co.za/" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.Sharetekgroup.com/" />
+        <meta property="og:url" content="https://www.sharetek.co.za/" />
         <meta
           property="og:title"
           content="Sharetek Group | Innovative IT & Software Solutions"
@@ -131,12 +131,12 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="https://www.Sharetekgroup.com/hero.jpg"
+          content="https://www.sharetek.co.za/hero.jpg"
         />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://www.Sharetekgroup.com/" />
+        <meta property="twitter:url" content="https://www.sharetek.co.za/" />
         <meta
           property="twitter:title"
           content="Sharetek Group | Innovative IT & Software Solutions"
@@ -147,7 +147,7 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://www.Sharetekgroup.com/hero.jpg"
+          content="https://www.sharetek.co.za/hero.jpg"
         />
 
         {/* Schema Markup */}
@@ -164,10 +164,10 @@ export default function Home() {
                     "ComputerStore",
                     "ITService",
                   ],
-                  "@id": "https://www.Sharetekgroup.com/#organization",
+                  "@id": "https://www.sharetek.co.za/#organization",
                   name: "Sharetek Group",
-                  url: "https://www.Sharetekgroup.com/",
-                  logo: "https://www.Sharetekgroup.com/Sharetek_logo.svg",
+                  url: "https://www.sharetek.co.za/",
+                  logo: "https://www.sharetek.co.za/Sharetek_logo.svg",
                   description:
                     "Sharetek Group provides cutting-edge IT solutions, custom software development, AI & ML services, and robust cybersecurity.",
                   address: {
@@ -191,24 +191,24 @@ export default function Home() {
                 },
                 {
                   "@type": "WebSite",
-                  "@id": "https://www.Sharetekgroup.com/#website",
-                  url: "https://www.Sharetekgroup.com/",
+                  "@id": "https://www.sharetek.co.za/#website",
+                  url: "https://www.sharetek.co.za/",
                   name: "Sharetek Group",
                   potentialAction: {
                     "@type": "SearchAction",
                     target:
-                      "https://www.Sharetekgroup.com/search?q={search_term_string}",
+                      "https://www.sharetek.co.za/search?q={search_term_string}",
                     "query-input": "required name=search_term_string",
                   },
                 },
                 {
                   "@type": "WebPage",
-                  "@id": "https://www.Sharetekgroup.com/#webpage",
-                  url: "https://www.Sharetekgroup.com/",
+                  "@id": "https://www.sharetek.co.za/#webpage",
+                  url: "https://www.sharetek.co.za/",
                   name: "Sharetek Group | Cutting-Edge IT Solutions & Software Development in Zimbabwe",
-                  isPartOf: { "@id": "https://www.Sharetekgroup.com/#website" },
+                  isPartOf: { "@id": "https://www.sharetek.co.za/#website" },
                   about: {
-                    "@id": "https://www.Sharetekgroup.com/#organization",
+                    "@id": "https://www.sharetek.co.za/#organization",
                   },
                   datePublished: "2023-01-01",
                   dateModified: new Date().toISOString().split("T")[0],
@@ -224,13 +224,13 @@ export default function Home() {
                   description:
                     "We design and develop custom software solutions tailored to your specific business needs, ensuring scalability, security, and optimal performance, including web applications, mobile apps, enterprise software, and UI/UX design.",
                   provider: {
-                    "@id": "https://www.Sharetekgroup.com/#organization",
+                    "@id": "https://www.sharetek.co.za/#organization",
                   },
                   areaServed: {
                     "@type": "Place",
                     name: "Zimbabwe and Southern Africa",
                   },
-                  url: "https://www.Sharetekgroup.com/services/platform-development",
+                  url: "https://www.sharetek.co.za/services/platform-development",
                 },
                 // Service Schema for AI and Machine Learning
                 {
@@ -240,13 +240,13 @@ export default function Home() {
                   description:
                     "Our AI and machine learning solutions help you automate, predict, and transform operations, leveraging advanced algorithms and data insights for maximum impact, covering predictive analytics, NLP, computer vision, and AI automation.",
                   provider: {
-                    "@id": "https://www.Sharetekgroup.com/#organization",
+                    "@id": "https://www.sharetek.co.za/#organization",
                   },
                   areaServed: {
                     "@type": "Place",
                     name: "Zimbabwe and Southern Africa",
                   },
-                  url: "https://www.Sharetekgroup.com/services/ai-and-machine-learning",
+                  url: "https://www.sharetek.co.za/services/ai-and-machine-learning",
                 },
                 // Service Schema for Cyber Security
                 {
@@ -256,13 +256,13 @@ export default function Home() {
                   description:
                     "Our expert team provides comprehensive IT support and maintenance services to keep your systems running smoothly and securely around the clock, including 24/7 monitoring, help desk support, security updates, and preventive maintenance.",
                   provider: {
-                    "@id": "https://www.Sharetekgroup.com/#organization",
+                    "@id": "https://www.sharetek.co.za/#organization",
                   },
                   areaServed: {
                     "@type": "Place",
                     name: "Zimbabwe and Southern Africa",
                   },
-                  url: "https://www.Sharetekgroup.com/services/cyber-security",
+                  url: "https://www.sharetek.co.za/services/cyber-security",
                 },
               ],
             }),
@@ -819,3 +819,6 @@ export default function Home() {
     </>
   );
 }
+
+
+

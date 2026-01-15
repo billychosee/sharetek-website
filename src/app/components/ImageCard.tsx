@@ -17,3 +17,6 @@ export default function ImageCard({ src, alt, caption }: ImageCardProps) {
   );
 }
 
+
+
+

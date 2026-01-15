@@ -212,7 +212,7 @@ export default function AboutUs() {
         id="company-stats"
       >
         <div className="md:w-2/5">
-          <p className="text-sm font-semibold text-[#27282C] whitespace-nowrap">
+          <p className="text-sm font-semibold text-[#A00927] whitespace-nowrap">
             Company Profile-Key Facts
           </p>
           <h1 className="pt-5 text-2xl font-bold lg:text-xl xl:text-2xl">
@@ -249,7 +249,7 @@ export default function AboutUs() {
       <section className="flex flex-col-reverse py-24 mx-5 text-black md:flex-row md:mx-24">
         <div className="flex flex-col justify-center md:w-1/2">
           <div className="pt-6 text-center md:text-start md:pt-0">
-            <p className="text-sm font-semibold text-[#27282C] whitespace-nowrap">
+            <p className="text-sm font-semibold text-[#A00927] whitespace-nowrap">
               What we do
             </p>
             <h1 className="pt-5 text-2xl font-bold">
@@ -257,7 +257,7 @@ export default function AboutUs() {
             </h1>
           </div>
           <div className="flex items-start gap-5 pt-10 lg:pt-5 xl:pt-10">
-            <div className="before:content-[''] before:w-2 before:h-2 before:bg-[#27282C] before:mt-2 before:mr-2 before:inline-block"></div>
+            <div className="before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block"></div>
             <p className="flex mb-10 text-sm align-top lg:text-xs xl:text-sm">
               Sharetek, your premier destination for cutting-edge IT Software,
               Consultancy and Hardware Solutions. With a passion for innovation
@@ -300,17 +300,17 @@ export default function AboutUs() {
       <section className="flex flex-col py-0 mx-5 text-black gap-14 md:py-10 md:mx-24 md:flex-row md:gap-24">
         {[
           {
-            icon: <FaUserTie className="w-10 h-10 text-[#27282C]" />,
+            icon: <FaUserTie className="w-10 h-10 text-[#A00927]" />,
             title: "Our Vision",
             text: `At Sharetek, we envision a future where seamless connectivity and innovative technology empower businesses to transcend boundaries and achieve their full potential. Our vision is to be the forefront provider of Computer Software Solutions and IT hardware solutions, driving the evolution of communication and computing landscapes through cutting-edge products, exceptional service, and a commitment to progress.`,
           },
           {
-            icon: <FaLightbulb className="w-10 h-10 text-[#27282C]" />,
+            icon: <FaLightbulb className="w-10 h-10 text-[#A00927]" />,
             title: "Our Mission",
             text: `Our mission guides us as we strive to fulfill our vision. By aligning our efforts with these principles, we are dedicated to making a significant difference in the way businesses communicate, operate, and succeed in the digital age. we invite you to join us in embracing the possibilities that technology offers and in creating a future where connectivity knows no bounds.`,
           },
           {
-            icon: <FaHandsHelping className="w-10 h-10 text-[#27282C]" />,
+            icon: <FaHandsHelping className="w-10 h-10 text-[#A00927]" />,
             title: "Our Culture",
             text: `Our drive for exceptional service delivery is built on the belief that we are nothing if you are not satisfied with us. Our passion for helping you achieve your goals, no matter what, is what truly differentiates us from our competitors. At Sharetek, our culture is not just a distant goal; it's a driving force that shapes our strategies, fuels our innovation, and guides our interactions with clients, partners, and the community.`,
           },
@@ -347,7 +347,7 @@ export default function AboutUs() {
           >
             <div className="relative w-4 h-4">
               {/* Static background circle */}
-              <span className="absolute w-4 h-4 rounded-full bg-[#27282C] opacity-30 top-0 left-0" />
+              <span className="absolute w-4 h-4 rounded-full bg-[#A00927] opacity-30 top-0 left-0" />
               {/* Flickering circle */}
               <span className="absolute w-4 h-4 rounded-full bg-[#27282C] flicker top-0 left-0" />
             </div>
@@ -357,7 +357,7 @@ export default function AboutUs() {
         {/* Text and Buttons */}
         <div className="space-y-10 text-center md:w-1/2 md:text-start">
           <div>
-            <p className="text-sm font-semibold text-[#27282C] whitespace-nowrap">
+            <p className="text-sm font-semibold text-[#A00927] whitespace-nowrap">
               Locations
             </p>
             <h1 className="pt-5 text-2xl font-bold">
@@ -366,12 +366,12 @@ export default function AboutUs() {
           </div>
 
           <div className="space-y-3">
-            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#27282C] before:mt-2 before:mr-2 before:inline-block">
+            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
               <p>
                 <strong>Zimbabwe</strong>: 13 Brentwood Avenue, Harare, Zimbabwe
               </p>
             </div>
-            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#27282C] before:mt-2 before:mr-2 before:inline-block">
+            <div className="flex items-start before:content-[''] before:w-2 before:h-2 before:bg-[#A00927] before:mt-2 before:mr-2 before:inline-block">
               <p>
                 <strong>South Africa</strong>: 12 Riversands Road, Beverly,
                 Sandton, South Africa, 2191
@@ -397,7 +397,7 @@ export default function AboutUs() {
         <div className="px-4 md:px-20 bg-gradient-to-t from-[#F9FAFB] to-white py-10">
           <div className="flex items-center my-10">
             <div className="flex-grow border-t border-gray-400"></div>
-            <span className="mx-4 text-sm font-semibold text-[#27282C] whitespace-nowrap">
+            <span className="mx-4 text-sm font-semibold text-[#A00927] whitespace-nowrap">
               OUR CLIENTS
             </span>
             <div className="flex-grow border-t border-gray-400"></div>
@@ -493,3 +493,6 @@ export default function AboutUs() {
     </section>
   );
 }
+
+
+

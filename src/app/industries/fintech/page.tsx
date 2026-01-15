@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Fintech Innovation in Zimbabwe & Africa | Sharetek Group",
     description: "Revolutionizing financial services with secure digital payment solutions and custom fintech platforms for African markets.",
-    url: "https://Sharetekgroup.com/industries/fintech",
+    url: "https://sharetek.co.za/industries/fintech",
     type: "website",
   },
 };
@@ -31,8 +31,8 @@ export default function FinTech() {
     "provider": {
       "@type": "Organization",
       "name": "Sharetek Group",
-      "url": "https://Sharetekgroup.com",
-      "logo": "https://Sharetekgroup.com/Sharetek_logo.svg"
+      "url": "https://sharetek.co.za",
+      "logo": "https://sharetek.co.za/Sharetek_logo.svg"
     },
     "description": "Innovative fintech solutions including digital payments, mobile money platforms, banking software, and financial APIs tailored for African markets.",
     "areaServed": {
@@ -279,3 +279,6 @@ export default function FinTech() {
     </div>
   );
 }
+
+
+

@@ -54,3 +54,6 @@ const SideBySideAccordion = ({ data }: SideBySideAccordionProps) => {
 
 export default SideBySideAccordion;
 
+
+
+

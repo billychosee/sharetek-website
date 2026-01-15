@@ -25,7 +25,7 @@ export const metadata = {
   openGraph: {
     title: 'SmatProp | Modern Property Management Software',
     description: 'Streamline rental operations with tenant credit checks, lease tracking, and online payment processing for residential and commercial properties.',
-    url: 'https://smatechgroup.com/products/smatprop',
+    url: 'https://sharetek.co.za/products/smatprop',
     siteName: 'SmaTech Group'
   }
 };
@@ -44,9 +44,9 @@ export default function SmatPropPage() {
       "@type": "Brand",
       "name": "SmaTech Group"
     },
-    "url": "https://smatechgroup.com/products/smatprop",
-    "logo": "https://smatechgroup.com/services_icon.svg",
-    "image": "https://smatechgroup.com/smat_prop_building.jpg",
+    "url": "https://sharetek.co.za/products/smatprop",
+    "logo": "https://sharetek.co.za/services_icon.svg",
+    "image": "https://sharetek.co.za/smat_prop_building.jpg",
     "featureList": [
       "Tenant Screening & History Checks",
       "Lease Management & Templates",
@@ -266,3 +266,6 @@ export default function SmatPropPage() {
     </div>
   )
 }
+
+
+

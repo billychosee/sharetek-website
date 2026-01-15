@@ -6,7 +6,7 @@ export const metadata = {
     openGraph: {
         title: 'SmatQR | QR Code Menu Solution for Restaurants & Cafes',
         description: 'Go paperless with digital menus, instant waiter calls, and seamless payment processing - all accessible through a simple QR code scan.',
-        url: 'https://smatechgroup.com/products/smatqr',
+        url: 'https://sharetek.co.za/products/smatqr',
         siteName: 'SmaTech Group'
     }
 };
@@ -22,3 +22,6 @@ export default function SmatQrLayout({
         </>
     )
 }
+
+
+

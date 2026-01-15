@@ -20,7 +20,7 @@ export const metadata = {
   openGraph: {
     title: 'Enterprise Cybersecurity Services | Threat Protection & Data Security',
     description: 'Proactive cybersecurity solutions with risk assessment, network protection, and ransomware defense tailored to your business needs.',
-    url: 'https://Sharetekgroup.com/services/cybersecurity',
+    url: 'https://sharetek.co.za/services/cybersecurity',
     siteName: 'Sharetek Group'
   }
 };
@@ -201,4 +201,7 @@ function CyberSecurity() {
 }
 
 export default CyberSecurity;
+
+
+
 

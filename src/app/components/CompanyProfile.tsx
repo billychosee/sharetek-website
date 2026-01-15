@@ -60,3 +60,6 @@ const CompanyProfile: React.FC<CompanyProfileProps> = ({ heading, subheading, st
 
 export default CompanyProfile;
 
+
+
+

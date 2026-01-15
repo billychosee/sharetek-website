@@ -29,3 +29,6 @@ const Map = ({ lat, lng }: { lat: number; lng: number }) => {
 };
 
 export default Map;
+
+
+

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PropTech Solutions for Zimbabwe & Africa | Sharetek Group",
     description: "Revolutionizing real estate operations, property management, and urban development across Africa with intelligent technology solutions.",
-    url: "https://Sharetekgroup.com/industries/proptech",
+    url: "https://sharetek.co.za/industries/proptech",
     type: "website",
   },
 };
@@ -59,8 +59,8 @@ export default function PropTech() {
     "@type": "Organization",
     "name": "Sharetek Group PropTech Solutions",
     "description": "Comprehensive property technology solutions for African real estate including property management systems, smart building IoT, and digital marketplaces.",
-    "url": "https://Sharetekgroup.com/industries/proptech",
-    "logo": "https://Sharetekgroup.com/Sharetek_logo.svg",
+    "url": "https://sharetek.co.za/industries/proptech",
+    "logo": "https://sharetek.co.za/Sharetek_logo.svg",
     "sameAs": [
       "https://twitter.com/Sharetekgroup",
       "https://linkedin.com/company/Sharetekgroup"
@@ -425,3 +425,6 @@ export default function PropTech() {
     </div>
   );
 }
+
+
+

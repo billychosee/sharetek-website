@@ -64,13 +64,13 @@ export default function SmatPay() {
             "@type": "Country",
             name: "Zimbabwe",
         },
-        url: "https://smatechgroup.com/products/smatpay",
-        logo: "https://smatechgroup.com/services_icon.svg",
-        image: "https://smatechgroup.com/smat_pay_methods.png",
+        url: "https://sharetek.co.za/products/smatpay",
+        logo: "https://sharetek.co.za/services_icon.svg",
+        image: "https://sharetek.co.za/smat_pay_methods.png",
         potentialAction: {
             "@type": "RegisterAction",
             name: "Register for SmatPay",
-            target: "https://smatechgroup.com/products/smatpay",
+            target: "https://sharetek.co.za/products/smatpay",
         },
     };
 
@@ -399,3 +399,6 @@ export default function SmatPay() {
         </div>
     );
 }
+
+
+

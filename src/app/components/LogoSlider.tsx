@@ -67,3 +67,6 @@ function HexagonLogo({ item }: { item: LogoItem }) {
     </div>
   );
 }
+
+
+

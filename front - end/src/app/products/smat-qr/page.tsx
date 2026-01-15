@@ -159,9 +159,9 @@ export default function SmatQr() {
     description:
       "SmatQR is a contactless digital menu and ordering system for restaurants, cafes, and other food service businesses. It enables customers to view menus, place orders, and pay directly from their smartphones by scanning a QR code.",
     brand: { "@type": "Brand", name: "Sharetek Group" },
-    url: "https://Sharetekgroup.com/products/smatqr",
-    logo: "https://Sharetekgroup.com/services_icon.svg",
-    image: "https://Sharetekgroup.com/smat_qr_phone.jpg",
+    url: "https://sharetek.co.za/products/smatqr",
+    logo: "https://sharetek.co.za/services_icon.svg",
+    image: "https://sharetek.co.za/smat_qr_phone.jpg",
     slogan:
       "Transform your restaurant with contactless QR code menus, seamless ordering, and integrated payments.",
     audience: {
@@ -439,3 +439,6 @@ export default function SmatQr() {
     </div>
   );
 }
+
+
+
