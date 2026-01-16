@@ -118,7 +118,7 @@ function Footer() {
               </li>
               <li>
                 <a
-                  href="https://crm.sharetek.co.za/"
+                  href="https://crm.sharetek.co.za/recruitment/recruitment_portal"
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"

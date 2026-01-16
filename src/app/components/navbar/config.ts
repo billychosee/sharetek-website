@@ -73,7 +73,7 @@ export const NAV_ITEMS = [
   },
   {
     label: "CAREERS",
-    href: "https://crm.sharetek.co.za",
+    href: "https://crm.sharetek.co.za/recruitment/recruitment_portal",
     icon: FiUsers,
     iconClass: "text-current"
   },
