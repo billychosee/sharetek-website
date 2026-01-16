@@ -32,7 +32,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-# (removed `.env*` so env files are tracked)
+.env.local
+sharetekwebsite - out.zip
 
 # vercel
 .vercel
